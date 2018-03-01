@@ -81,5 +81,11 @@ namespace NewsApp
             RootObject myEntertainmentNews = await News.GetEntertainmentNews();
             EntertainmentNewsTextBlock.Text = myEntertainmentNews.ToString();
         }
+
+        private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myBusinessNews = await News.GetBusinessNews();
+            EntertainmentNewsTextBlock.Text = myBusinessNews.ToString();
+        }
     }
 }

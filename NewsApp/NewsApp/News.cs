@@ -135,6 +135,27 @@ namespace NewsApp
 
             return data;
         }
+
+
+        //get business news
+        public async static Task<RootObject> GetBusinessNews()
+        {
+            var http = new HttpClient();
+            //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=business&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+
+            var result = await response.Content.ReadAsStringAsync();
+            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
+
+            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            //var data = (RootObject)serializer.ReadObject(ms);
+
+
+            //deserialize the json object
+            var data = JsonConvert.DeserializeObject<RootObject>(result);
+
+            return data;
+        }
     }
 
 

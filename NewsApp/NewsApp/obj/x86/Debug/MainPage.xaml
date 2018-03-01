@@ -17,13 +17,15 @@
                 <Button x:ConnectionId='4' x:Name="GetScienceNews_Button" Content="Load Science News" VerticalAlignment="Center"                                    />
                 <Button x:ConnectionId='5' x:Name="GetHealthNews_Button" Content="Load Health News" VerticalAlignment="Center"                                   />
                 <Button x:ConnectionId='6' x:Name="GetEntertainmentNews_Button" Content="Load Entertainment News" VerticalAlignment="Center"                                          />
+                <Button x:ConnectionId='7' x:Name="GetBusinessNews_Button" Content="Load Business News" VerticalAlignment="Center"                                     />
                 <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
-                <TextBlock x:ConnectionId='7' x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='8' x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='9' x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='10' x:Name="ScienceNewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='11' x:Name="HealthNewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='12' x:Name="EntertainmentNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='8' x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='9' x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='10' x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='11' x:Name="ScienceNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='12' x:Name="HealthNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='13' x:Name="EntertainmentNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='14' x:Name="BusinessNewsTextBlock" HorizontalAlignment="Left"/>
             </StackPanel>
         </ScrollViewer>
 

@@ -17,6 +17,7 @@
                 <Button x:Name="GetScienceNews_Button" Content="Load Science News" VerticalAlignment="Center" Click="GetScienceNews_Button_Click"/>
                 <Button x:Name="GetHealthNews_Button" Content="Load Health News" VerticalAlignment="Center" Click="GetHealthNews_Button_Click"/>
                 <Button x:Name="GetEntertainmentNews_Button" Content="Load Entertainment News" VerticalAlignment="Center" Click="GetEntertainmentNews_Button_Click"/>
+                <Button x:Name="GetBusinessNews_Button" Content="Load Business News" VerticalAlignment="Center" Click="GetBusinessNews_Button_Click"/>
                 <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
                 <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
@@ -24,6 +25,7 @@
                 <TextBlock x:Name="ScienceNewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="HealthNewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="EntertainmentNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="BusinessNewsTextBlock" HorizontalAlignment="Left"/>
             </StackPanel>
         </ScrollViewer>
 
