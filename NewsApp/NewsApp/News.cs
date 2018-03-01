@@ -42,6 +42,15 @@ namespace NewsApp
         public string id { get; set; }
         [DataMember]
         public string name { get; set; }
+
+        override
+           public String ToString()
+        {
+            var mySource = name;
+
+            return mySource;
+
+        }
     }
 
     [DataContract]
@@ -66,7 +75,9 @@ namespace NewsApp
             public String ToString()
         {
             var currentNews = "";
-            currentNews = "Author-" + author + "\n" + "Title-" + title + "\n" + "Description" + description + "\n";
+            currentNews = "Source-"  + source.ToString() + "\n"  + "Author-" + author + "\n" + "Title-" + title + "\n" +
+                "Description-" + description +"\n" +"Url-"+ url + "\n"  + "Image-" + urlToImage + "\n" +
+                "Published at-"+ publishedAt + "\n\n\n";
             return currentNews;
         }
 
