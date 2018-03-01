@@ -233,12 +233,12 @@ namespace NewsApp
         override
             public String ToString()
         {
-            var gary = "";
+            var obectString = "";
             foreach (var myArty in articles)
             {
-                gary = "\n" + gary + myArty.ToString();
+                obectString = "\n" + obectString + myArty.ToString();
             }
-            return gary;
+            return obectString;
         }
         //}
     }
