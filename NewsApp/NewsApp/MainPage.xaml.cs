@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,14 @@ namespace NewsApp
         public MainPage()
         {
             this.InitializeComponent();
+            outPutData();
+        }
+
+        private async void outPutData()
+        {
+            RootObject myNews = await News.GetNews();
+            Debug.WriteLine(myNews.ToString());
+
         }
     }
 }
