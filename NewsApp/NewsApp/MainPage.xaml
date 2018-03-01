@@ -9,5 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <ScrollViewer HorizontalScrollMode ="Enabled">
+            <StackPanel>
+                <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
+                <Button x:Name="GetName_Button" Content="Get my name" VerticalAlignment="Center" Click="GetName_Button_Click"/>
+                <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
+                <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </ScrollViewer>
+
     </Grid>
 </Page>

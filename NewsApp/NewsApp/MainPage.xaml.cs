@@ -26,7 +26,7 @@ namespace NewsApp
         public MainPage()
         {
             this.InitializeComponent();
-            outPutData();
+            //outPutData();
         }
 
         private async void outPutData()
@@ -34,6 +34,20 @@ namespace NewsApp
             RootObject myNews = await News.GetNews();
             Debug.WriteLine(myNews.ToString());
 
+        }
+
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myNews = await News.GetNews();
+            NewsTextBlock.Text = myNews.ToString();
+            // outPutData();
+        }
+
+        private void GetName_Button_Click(object sender, RoutedEventArgs e)
+        {
+            //String name = "Gary";
+            //MessageBox.Show("Your name is: " + name);
+            // NameTextBlock.Text = name;
         }
     }
 }
