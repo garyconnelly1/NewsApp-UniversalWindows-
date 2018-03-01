@@ -68,5 +68,18 @@ namespace NewsApp
             RootObject myScienceNews = await News.GetScienceNews();
             ScienceNewsTextBlock.Text = myScienceNews.ToString();
         }
+
+        private async void GetHealthNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myHealthNews = await News.GetHealthNews();
+            HealthNewsTextBlock.Text = myHealthNews.ToString();
+
+        }
+
+        private async void GetEntertainmentNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myEntertainmentNews = await News.GetEntertainmentNews();
+            EntertainmentNewsTextBlock.Text = myEntertainmentNews.ToString();
+        }
     }
 }
