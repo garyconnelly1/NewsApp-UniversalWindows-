@@ -14,10 +14,12 @@
                 <Button x:ConnectionId='1' x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center"                     />
                 <Button x:ConnectionId='2' x:Name="GetTechNews_Button" Content="Load Technology News" VerticalAlignment="Center"                                 />
                 <Button x:ConnectionId='3' x:Name="GetSportNews_Button" Content="Load Sports News" VerticalAlignment="Center"                                  />
+                <Button x:ConnectionId='4' x:Name="GetScienceNews_Button" Content="Load Science News" VerticalAlignment="Center"                                    />
                 <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
-                <TextBlock x:ConnectionId='4' x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='5' x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='6' x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='5' x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='6' x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='7' x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='8' x:Name="ScienceNewsTextBlock" HorizontalAlignment="Left"/>
             </StackPanel>
         </ScrollViewer>
 

@@ -62,5 +62,11 @@ namespace NewsApp
             SportNewsTextBlock.Text = mySportNews.ToString();
 
         }
+
+        private async void GetScienceNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myScienceNews = await News.GetScienceNews();
+            ScienceNewsTextBlock.Text = myScienceNews.ToString();
+        }
     }
 }
