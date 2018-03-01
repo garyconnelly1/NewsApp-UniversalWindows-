@@ -13,11 +13,52 @@ namespace NewsApp
     class News
     {
 
+        //get general news
         public async static Task<RootObject> GetNews()
         {
             var http = new HttpClient();
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+
+            var result = await response.Content.ReadAsStringAsync();
+            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
+
+            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            //var data = (RootObject)serializer.ReadObject(ms);
+
+
+            //deserialize the json object
+            var data = JsonConvert.DeserializeObject<RootObject>(result);
+
+            return data;
+        }
+
+        //get technology news
+        public async static Task<RootObject> GetTechNews()
+        {
+            var http = new HttpClient();
+            //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=technology&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+
+            var result = await response.Content.ReadAsStringAsync();
+            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
+
+            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            //var data = (RootObject)serializer.ReadObject(ms);
+
+
+            //deserialize the json object
+            var data = JsonConvert.DeserializeObject<RootObject>(result);
+
+            return data;
+        }
+
+        //get technology news
+        public async static Task<RootObject> GetSportNews()
+        {
+            var http = new HttpClient();
+            //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=sports&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
             //var serializer = new DataContractJsonSerializer(typeof(RootObject));

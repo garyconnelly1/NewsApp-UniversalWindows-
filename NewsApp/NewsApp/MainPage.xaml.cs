@@ -49,5 +49,18 @@ namespace NewsApp
             //MessageBox.Show("Your name is: " + name);
             // NameTextBlock.Text = name;
         }
+
+        private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myTechNews = await News.GetTechNews();
+            TechNewsTextBlock.Text = myTechNews.ToString();
+        }
+
+        private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject mySportNews = await News.GetSportNews();
+            SportNewsTextBlock.Text = mySportNews.ToString();
+
+        }
     }
 }

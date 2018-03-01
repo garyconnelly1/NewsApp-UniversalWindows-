@@ -12,9 +12,12 @@
         <ScrollViewer HorizontalScrollMode ="Enabled">
             <StackPanel>
                 <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
-                <Button x:Name="GetName_Button" Content="Get my name" VerticalAlignment="Center" Click="GetName_Button_Click"/>
+                <Button x:Name="GetTechNews_Button" Content="Load Technology News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
+                <Button x:Name="GetSportNews_Button" Content="Load Sports News" VerticalAlignment="Center" Click="GetSportNews_Button_Click"/>
                 <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
                 <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
             </StackPanel>
         </ScrollViewer>
 
