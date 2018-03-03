@@ -229,7 +229,7 @@ namespace NewsApp
         //    //  return string.Format("{0}", string.Join("", articles.ToString()));
         //    return articles.ToString();
 
-        // kevin the great
+       //overiride ToString method on root object
         override
             public String ToString()
         {
