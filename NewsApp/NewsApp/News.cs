@@ -47,7 +47,7 @@ namespace NewsApp
             //var data = (RootObject)serializer.ReadObject(ms);
 
 
-            //deserialize the json object
+            //deserialize the json objec
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
             return data;

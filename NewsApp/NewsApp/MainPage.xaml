@@ -8,8 +8,45 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="95*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="81*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="102*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
 
-        <ScrollViewer HorizontalScrollMode ="Enabled">
+
+        <!--<Pivot x:Name="rootPivot" Title="News Pivot">
+            <PivotItem Header="General News">
+
+                <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
+                <ScrollViewer HorizontalScrollMode ="Enabled">
+
+                    <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
+                </ScrollViewer>
+
+            </PivotItem>
+            <PivotItem Header="Pivot Item 2">
+                -->
+        <!--Pivot content goes here-->
+        <!--
+                <TextBlock Text="Content of pivot item 2."/>
+            </PivotItem>
+            <PivotItem Header="Pivot Item 3">
+                -->
+        <!--Pivot content goes here-->
+        <!--
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+        </Pivot>-->
+
+        <ScrollViewer HorizontalScrollMode ="Enabled" Margin="0,0,-1294,0" Grid.ColumnSpan="3" Grid.RowSpan="5">
             <StackPanel>
                 <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
                 <Button x:Name="GetTechNews_Button" Content="Load Technology News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
