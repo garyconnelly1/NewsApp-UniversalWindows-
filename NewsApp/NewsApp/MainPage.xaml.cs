@@ -56,7 +56,8 @@ namespace NewsApp
         private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myTechNews = await News.GetTechNews();
-          //  TechNewsTextBlock.Text = myTechNews.ToString();
+            TechNewsTextBlock.Text = myTechNews.ToString();
+            TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
         }
 
         private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)

@@ -23,23 +23,53 @@
 
 
         <Pivot x:ConnectionId='1' x:Name="NewsPivot" Title="News Pivot">
-            <PivotItem Header="Pivot Item 1">
+            <PivotItem Header="General news">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='2' x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center"                     />
+                    <Button x:ConnectionId='4' x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center"                     />
                     <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='3' x:Name="NewsTextBlock" Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <TextBlock x:ConnectionId='5' x:Name="NewsTextBlock" Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
                 <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
-            <PivotItem Header="Pivot Item 2">
-                <!--Pivot content goes here-->
-                <TextBlock Text="Content of pivot item 2."/>
+            
+            <PivotItem Header="Technology">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:ConnectionId='2' x:Name="GetTechNews_Button" Content="Load Tech News" VerticalAlignment="Center"                                 />
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:ConnectionId='3' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
             </PivotItem>
+            <!--<PivotItem Header="General news">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="NewsTextBlock" Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+                --><!--<TextBlock Text="Content of pivot item 1."/>--><!--
+            </PivotItem>-->
+            
+            
+            
+            
+            
+            
+            
+            
             <PivotItem Header="Pivot Item 3">
                 <!--Pivot content goes here-->
                 <TextBlock Text="Content of pivot item 3."/>

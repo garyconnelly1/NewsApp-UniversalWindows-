@@ -23,7 +23,7 @@
 
 
         <Pivot x:Name="NewsPivot" Title="News Pivot">
-            <PivotItem Header="Pivot Item 1">
+            <PivotItem Header="General news">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -36,10 +36,22 @@
                 </Grid>
                 <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
-            <PivotItem Header="Pivot Item 2">
-                <!--Pivot content goes here-->
-                <TextBlock Text="Content of pivot item 2."/>
+            
+            <PivotItem Header="Technology">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetTechNews_Button" Content="Load Tech News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
             </PivotItem>
+         
+            
+            
             <PivotItem Header="Pivot Item 3">
                 <!--Pivot content goes here-->
                 <TextBlock Text="Content of pivot item 3."/>
