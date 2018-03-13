@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="63*"/>
             <RowDefinition Height="79*"/>
             <RowDefinition Height="95*"/>
@@ -19,34 +19,34 @@
             <ColumnDefinition Width="55*"/>
             <ColumnDefinition Width="102*"/>
             <ColumnDefinition Width="59*"/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>-->
 
 
-        <!--<Pivot x:Name="rootPivot" Title="News Pivot">
-            <PivotItem Header="General News">
-
-                <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
-                <ScrollViewer HorizontalScrollMode ="Enabled">
-
-                    <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
-                </ScrollViewer>
-
+        <Pivot x:Name="NewsPivot" Title="News Pivot">
+            <PivotItem Header="Pivot Item 1">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="NewsTextBlock" Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+                <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
             <PivotItem Header="Pivot Item 2">
-                -->
-        <!--Pivot content goes here-->
-        <!--
+                <!--Pivot content goes here-->
                 <TextBlock Text="Content of pivot item 2."/>
             </PivotItem>
             <PivotItem Header="Pivot Item 3">
-                -->
-        <!--Pivot content goes here-->
-        <!--
+                <!--Pivot content goes here-->
                 <TextBlock Text="Content of pivot item 3."/>
             </PivotItem>
-        </Pivot>-->
+        </Pivot>
 
-        <ScrollViewer HorizontalScrollMode ="Enabled" Margin="0,0,-1294,0" Grid.ColumnSpan="3" Grid.RowSpan="5">
+      <!--  <ScrollViewer HorizontalScrollMode ="Enabled" Margin="0,0,-1294,0" Grid.ColumnSpan="3" Grid.RowSpan="5">
             <StackPanel>
                 <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
                 <Button x:Name="GetTechNews_Button" Content="Load Technology News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
@@ -55,7 +55,7 @@
                 <Button x:Name="GetHealthNews_Button" Content="Load Health News" VerticalAlignment="Center" Click="GetHealthNews_Button_Click"/>
                 <Button x:Name="GetEntertainmentNews_Button" Content="Load Entertainment News" VerticalAlignment="Center" Click="GetEntertainmentNews_Button_Click"/>
                 <Button x:Name="GetBusinessNews_Button" Content="Load Business News" VerticalAlignment="Center" Click="GetBusinessNews_Button_Click"/>
-                <!--<TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>-->
+                <TextBlock x:Name="NameTextBlock" HorizontalAlignment="Right"/>
                 <TextBlock x:Name="NewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="TechNewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="SportNewsTextBlock" HorizontalAlignment="Left"/>
@@ -64,7 +64,7 @@
                 <TextBlock x:Name="EntertainmentNewsTextBlock" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="BusinessNewsTextBlock" HorizontalAlignment="Left"/>
             </StackPanel>
-        </ScrollViewer>
+        </ScrollViewer>-->
 
     </Grid>
 </Page>

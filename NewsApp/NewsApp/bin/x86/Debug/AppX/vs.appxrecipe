@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T21:54:48.577</Modified>
+      <Modified>2018-03-13T12:31:08.921</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\NewsApp.exe">
       <PackagePath>entrypoint\NewsApp.exe</PackagePath>
-      <Modified>2018-03-12T21:54:43.617</Modified>
+      <Modified>2018-03-13T12:31:04.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -559,7 +559,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\NewsApp.xr.xml">
       <PackagePath>NewsApp.xr.xml</PackagePath>
-      <Modified>2018-03-12T21:54:42.873</Modified>
+      <Modified>2018-03-13T12:31:03.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -568,11 +568,11 @@
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-12T21:54:47.594</Modified>
+      <Modified>2018-03-13T12:31:07.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\Core\NewsApp.exe">
       <PackagePath>NewsApp.exe</PackagePath>
-      <Modified>2018-03-12T21:54:48.561</Modified>
+      <Modified>2018-03-13T12:31:08.876</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
