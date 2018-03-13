@@ -49,16 +49,80 @@
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
-         
-            
-            
-            <PivotItem Header="Pivot Item 3">
-                <!--Pivot content goes here-->
-                <TextBlock Text="Content of pivot item 3."/>
+
+
+
+            <PivotItem Header="Sport">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetSportNews_Button" Content="Load Sport News" VerticalAlignment="Center" Click="GetSportNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
             </PivotItem>
+
+
+            <PivotItem Header="Science">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetScienceNews_Button" Content="Load Science News" VerticalAlignment="Center" Click="GetScienceNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+            </PivotItem>
+
+
+            <PivotItem Header="Health">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetHealthNews_Button" Content="Load Health News" VerticalAlignment="Center" Click="GetHealthNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Entertainment">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetEntertainmentNews_Button" Content="Load Entertainment News" VerticalAlignment="Center" Click="GetEntertainmentNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Business">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetBusinesNews_Button" Content="Load Business News" VerticalAlignment="Center" Click="GetBusinessNews_Button_Click"/>
+                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                        <TextBlock x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                    </ScrollViewer>
+                </Grid>
+            </PivotItem>
+
+
         </Pivot>
 
-      <!--  <ScrollViewer HorizontalScrollMode ="Enabled" Margin="0,0,-1294,0" Grid.ColumnSpan="3" Grid.RowSpan="5">
+                <!--  <ScrollViewer HorizontalScrollMode ="Enabled" Margin="0,0,-1294,0" Grid.ColumnSpan="3" Grid.RowSpan="5">
             <StackPanel>
                 <Button x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
                 <Button x:Name="GetTechNews_Button" Content="Load Technology News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>

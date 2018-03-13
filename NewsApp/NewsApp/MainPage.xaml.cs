@@ -63,33 +63,38 @@ namespace NewsApp
         private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject mySportNews = await News.GetSportNews();
-          //  SportNewsTextBlock.Text = mySportNews.ToString();
+            SportNewsTextBlock.Text = mySportNews.ToString();
+            SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
         }
 
         private async void GetScienceNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myScienceNews = await News.GetScienceNews();
-           // ScienceNewsTextBlock.Text = myScienceNews.ToString();
+            ScienceNewsTextBlock.Text = myScienceNews.ToString();
+            ScienceNewsTextBlock.TextWrapping = TextWrapping.Wrap;
         }
 
         private async void GetHealthNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myHealthNews = await News.GetHealthNews();
-           // HealthNewsTextBlock.Text = myHealthNews.ToString();
+            HealthNewsTextBlock.Text = myHealthNews.ToString();
+            HealthNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
         }
 
         private async void GetEntertainmentNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myEntertainmentNews = await News.GetEntertainmentNews();
-         //   EntertainmentNewsTextBlock.Text = myEntertainmentNews.ToString();
+            EntertainmentNewsTextBlock.Text = myEntertainmentNews.ToString();
+            EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
         }
 
         private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myBusinessNews = await News.GetBusinessNews();
-          //  EntertainmentNewsTextBlock.Text = myBusinessNews.ToString();
+            BusinessNewsTextBlock.Text = myBusinessNews.ToString();
+            BusinessNewsTextBlock.TextWrapping = TextWrapping.Wrap;
         }
     }
 }
