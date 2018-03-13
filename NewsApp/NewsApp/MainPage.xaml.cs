@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -29,6 +30,8 @@ namespace NewsApp
             //outPutData();
         }
 
+        String source;
+
         private async void outPutData()
         {
             RootObject myNews = await News.GetNews();
@@ -40,8 +43,8 @@ namespace NewsApp
         private async void button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myNews = await News.GetNews();
-            
-           // NewsTextBlock.Text = myNews.ToString();
+
+            // NewsTextBlock.Text = myNews.ToString();
             NewsTextBlock.Text = myNews.returnSource();
             NewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -97,6 +100,42 @@ namespace NewsApp
             RootObject myBusinessNews = await News.GetBusinessNews();
             BusinessNewsTextBlock.Text = myBusinessNews.ToString();
             BusinessNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+        }
+
+        //to get general news
+        async void Image_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            RootObject myNews = await News.GetNews();
+
+            // NewsTextBlock.Text = myNews.ToString();
+            string[] text = myNews.returnUrlImage();
+            for (int i = 0; i < text.Length; i++)
+            {
+
+                Image img = sender as Image;
+                BitmapImage bitmapImage = new BitmapImage();
+               
+                img.Width = bitmapImage.DecodePixelWidth = 80; //natural px width of image source
+                                                               // don't need to set Height, system maintains aspect ratio, and calculates the other
+                                                               // dimension, so long as one dimension measurement is provided
+                bitmapImage.UriSource = new Uri(img.BaseUri, text[i]);
+
+
+                //  NewsTextBlock.Text += "\n " + text[i] + "\n ";
+                // NewsTextBlock.Text = text[0] + "\n";
+                // NewsTextBlock.TextWrapping = TextWrapping.Wrap;
+            }
+            // NewsT
+
+
+
+            //Image img = sender as Image;
+            //BitmapImage bitmapImage = new BitmapImage();
+            //img.Width = bitmapImage.DecodePixelWidth = 80; //natural px width of image source
+            //                                               // don't need to set Height, system maintains aspect ratio, and calculates the other
+            //                                               // dimension, so long as one dimension measurement is provided
+            //bitmapImage.UriSource = new Uri(img.BaseUri, "Images/myimage.png");
         }
     }
 }

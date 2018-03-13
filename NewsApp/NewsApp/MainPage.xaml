@@ -119,6 +119,23 @@
                 </Grid>
             </PivotItem>
 
+            <PivotItem Header="Image">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="GetImageNews_Button" Content="Load Images" VerticalAlignment="Center" Click="Image_Loaded"/>
+                    <!---https://www.independent.ie/world-news/and-finally/article36700269.ece/ALTERNATES/h342/ipanews_b4d74b57-e4ae-4a70-866a-f23f0dcac92d_1-->
+                    <ScrollViewer x:Name="ImageView" Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                       
+                    </ScrollViewer>
+
+                </Grid>
+
+            </PivotItem>
+
+
 
         </Pivot>
 

@@ -277,14 +277,20 @@ namespace NewsApp
         }
 
         //to return only urlImage
-        public String returnUrlImage()
+        public String[] returnUrlImage()
         {
             var obectString = "";
             foreach (var myArty in articles)
             {
-                obectString = "\n" + obectString + "URLIMAGE - " + myArty.urlToImage + "\n";
+                 obectString = "\t" + obectString  + myArty.urlToImage + "\t";
+                //return myArty.urlToImage;
+                //obectString = "\t" + obectString +  myArty.urlToImage + "\t";
+                
             }
-            return obectString;
+            //String[] tokens = obectString.Split("\t");
+            string[] tokens = obectString.Split('\t');
+            // return obectString;
+            return tokens;
         }
 
 
