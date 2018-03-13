@@ -36,11 +36,13 @@ namespace NewsApp
 
         }
 
+        //to get general news
         private async void button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myNews = await News.GetNews();
             
-            NewsTextBlock.Text = myNews.ToString();
+           // NewsTextBlock.Text = myNews.ToString();
+            NewsTextBlock.Text = myNews.returnSource();
             NewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
             // outPutData();

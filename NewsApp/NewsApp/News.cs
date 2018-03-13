@@ -230,6 +230,8 @@ namespace NewsApp
         //    return articles.ToString();
 
        //overiride ToString method on root object
+
+       //to return the full news object as a string
         override
             public String ToString()
         {
@@ -237,6 +239,87 @@ namespace NewsApp
             foreach (var myArty in articles)
             {
                 obectString = "\n" + obectString + myArty.ToString();
+            }
+            return obectString;
+        }
+
+        //to return only author
+        public String returnAuthor()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+            }
+            return obectString;
+        }
+
+        //to return only title
+        public String returnTitle()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "TITLE - " + myArty.title + "\n";
+            }
+            return obectString;
+        }
+
+        //to return only url
+        public String returnUrl()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "URL - " + myArty.url + "\n";
+            }
+            return obectString;
+        }
+
+        //to return only urlImage
+        public String returnUrlImage()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "URLIMAGE - " + myArty.urlToImage + "\n";
+            }
+            return obectString;
+        }
+
+
+        //to return only publish date
+        public String returnPublishedAt()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "PUBLISHEDAT - " + myArty.publishedAt + "\n";
+            }
+            return obectString;
+        }
+
+
+        //to return only source
+        public String returnSource()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "PUBLISHEDAT - " + myArty.source + "\n";
+            }
+            return obectString;
+        }
+
+
+
+        //to return only description
+        public String returnDescription()
+        {
+            var obectString = "";
+            foreach (var myArty in articles)
+            {
+                obectString = "\n" + obectString + "SOURCE- " + myArty.description + "\n";
             }
             return obectString;
         }
