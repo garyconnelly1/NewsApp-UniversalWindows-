@@ -30,7 +30,7 @@ namespace NewsApp
             //outPutData();
         }
 
-        String source;
+        
 
         private async void outPutData()
         {
@@ -45,7 +45,7 @@ namespace NewsApp
             RootObject myNews = await News.GetNews();
 
             // NewsTextBlock.Text = myNews.ToString();
-            NewsTextBlock.Text = myNews.returnSource();
+            NewsTextBlock.Text = myNews.ToString();
             NewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
             // outPutData();

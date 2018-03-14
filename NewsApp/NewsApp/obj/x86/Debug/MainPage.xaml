@@ -22,99 +22,148 @@
         </Grid.ColumnDefinitions>-->
 
 
-        <Pivot x:ConnectionId='1' x:Name="NewsPivot" Title="News Pivot">
-            <PivotItem Header="General news">
+        <Pivot x:ConnectionId='1' x:Name="NewsPivot" Title="News App">
+            <PivotItem Header="General news" Background="LightBlue">
+
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
-                        <RowDefinition />
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='15' x:Name="GetNews_Button" Content="Load News" VerticalAlignment="Center"                     />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='16' x:Name="NewsTextBlock" Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='16' x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center"                     />
+
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
+
+                        <TextBlock x:ConnectionId='17' x:Name="NewsTextBlock"  Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
                     </ScrollViewer>
+
                 </Grid>
+                <!--.Row="1"-->
+               
                 <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
-            
-            <PivotItem Header="Technology">
+
+            <PivotItem Header="Technology" Background="LightCoral">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='13' x:Name="GetTechNews_Button" Content="Load Tech News" VerticalAlignment="Center"                                 />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='14' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='14' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
+                        <TextBlock x:ConnectionId='15' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
 
 
-            <PivotItem Header="Sport">
+            <PivotItem Header="Sport" Background="LightGreen">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='11' x:Name="GetSportNews_Button" Content="Load Sport News" VerticalAlignment="Center"                                  />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='12' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='12' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
+                        <TextBlock x:ConnectionId='13' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
 
-            <PivotItem Header="Science">
+            <PivotItem Header="Science" Background="BlanchedAlmond">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='9' x:Name="GetScienceNews_Button" Content="Load Science News" VerticalAlignment="Center"                                    />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='10' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='10' x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center"                                    />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="MediumTurquoise">
+                        <TextBlock x:ConnectionId='11' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
 
-            <PivotItem Header="Health">
+            <PivotItem Header="Health" Background="PaleVioletRed">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='7' x:Name="GetHealthNews_Button" Content="Load Health News" VerticalAlignment="Center"                                   />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='8' x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='8' x:Name="GetHealthNews_Button" Grid.Row="0" Content="Load Health News" VerticalAlignment="Center"                                   />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightBlue">
+                        <TextBlock x:ConnectionId='9' x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
-            <PivotItem Header="Entertainment">
+            <PivotItem Header="Entertainment" Background="DarkGoldenrod">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='5' x:Name="GetEntertainmentNews_Button" Content="Load Entertainment News" VerticalAlignment="Center"                                          />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='6' x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='6' x:Name="GetEntertainmentNews_Button" Grid.Row="0" Content="Load Entertainment News" VerticalAlignment="Center"                                          />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
+                        <TextBlock x:ConnectionId='7' x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
-            <PivotItem Header="Business">
+            <PivotItem Header="Business" Background="SeaGreen">
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='3' x:Name="GetBusinesNews_Button" Content="Load Business News" VerticalAlignment="Center"                                     />
-                    <ScrollViewer Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                        <TextBlock x:ConnectionId='4' x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='4' x:Name="GetBusinesNews_Button" Grid.Row="0" Content="Load Business News" VerticalAlignment="Center"                                     />
+                    <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightGray">
+                        <TextBlock x:ConnectionId='5' x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
@@ -127,7 +176,9 @@
                     </Grid.RowDefinitions>
                     <Button x:ConnectionId='2' x:Name="GetImageNews_Button" Content="Load Images" VerticalAlignment="Center"                     />
                     <!---https://www.independent.ie/world-news/and-finally/article36700269.ece/ALTERNATES/h342/ipanews_b4d74b57-e4ae-4a70-866a-f23f0dcac92d_1-->
-                    
+                    <ScrollViewer x:ConnectionId='3' x:Name="ImageView" Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+                       
+                    </ScrollViewer>
 
                 </Grid>
 
