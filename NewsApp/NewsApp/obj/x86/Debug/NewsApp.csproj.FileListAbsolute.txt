@@ -128,7 +128,6 @@ C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Deb
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\NewsApp.csprojResolveAssemblyReference.cache
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\App.g.i.cs
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\App.g.cs
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\MainPage.g.i.cs
@@ -222,3 +221,4 @@ C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Deb
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\obj\x86\Debug\NewsApp.csprojResolveAssemblyReference.cache

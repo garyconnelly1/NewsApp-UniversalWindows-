@@ -49,7 +49,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="NewsApp.MainPage" />
   </Roots.RootTypes>

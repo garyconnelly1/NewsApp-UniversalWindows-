@@ -36,12 +36,32 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center" Click="button_Click"/>
+                    <Button x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center" Click="GetList_Button_Click"/>
 
                     <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
 
-                        <TextBlock x:Name="NewsTextBlock"  Text="Some Text will Go here" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                      <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
+                        <StackPanel>
+                            
 
+                            
+                           
+                            <Image x:Name="ResultImage1" Height="200"/>
+                            <TextBlock x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+
+                            <Image x:Name="ResultImage2" Height="200"/>
+                            <TextBlock x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+
+                            <Image x:Name="ResultImage3" Height="200"/>
+                            <TextBlock x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+
+                            <Image x:Name="ResultImage4" Height="200"/>
+                            <TextBlock x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+
+                            <Image x:Name="ResultImage5" Height="200"/>
+                            <TextBlock x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+
+                        </StackPanel>
                     </ScrollViewer>
 
                 </Grid>
@@ -64,7 +84,23 @@
 
                     <Button x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
-                        <TextBlock x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            
+                            <Image x:Name="TechImage" Height="200"/>
+                            <TextBlock x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="TechImage2" Height="200"/>
+                            <TextBlock x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="TechImage3" Height="200"/>
+                            <TextBlock x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="TechImage4" Height="200"/>
+                            <TextBlock x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="TechImage5" Height="200"/>
+                            <TextBlock x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>

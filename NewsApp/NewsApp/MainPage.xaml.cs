@@ -45,11 +45,122 @@ namespace NewsApp
             RootObject myNews = await News.GetNews();
 
             // NewsTextBlock.Text = myNews.ToString();
-            NewsTextBlock.Text = myNews.ToString();
-            NewsTextBlock.TextWrapping = TextWrapping.Wrap;
+            NewsTextBlock1.Text = myNews.ToString();
+            NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
 
             // outPutData();
         }
+
+        //to get general news
+        private async void GetList_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myNews = await News.GetNews();
+
+            List<string> myArticles = new List<string>();
+            var obectString = "";
+            myArticles = myNews.returnArticleList();
+            Uri uri;
+            int i = 0;
+
+            //  foreach (var myArty in myArticles)
+            foreach (var myArty in myNews.articles)
+            {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
+               
+                    i++;
+                    obectString = "\n" + myArty.ToString();
+                     String myImage = myArty.urlToImage;
+
+                    uri = new Uri(myArty.url);
+
+                //1st article
+                    if (i == 1)
+                    {
+                       
+                        String image = String.Format(myImage);
+                        ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        NewsTextBlock1.Text += "\n\n" + obectString;
+                        //NewsTextBlock.
+                        NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
+
+                    }
+
+                    //2nd article
+                    if (i == 2)
+                    {
+                       
+                        String image = String.Format(myImage);
+                        ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        NewsTextBlock2.Text += "\n\n" + obectString;
+                        //NewsTextBlock.
+                        NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+
+                    }
+
+                //3rd article
+                if (i == 3)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock3.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //4th article
+                if (i == 4)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock4.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //1st article
+                if (i == 5)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock5.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+
+
+            }
+        }
+
+        //to get general news
+        /*
+        private async void TGetList_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myNews = await News.GetNews();
+
+            List<string[]> myArticles = new List<string[]>();
+
+            myArticles = myNews.returnArticleListArray();
+
+            foreach (string[] myArty in myArticles)
+            {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
+                ImageNewsTextBlock1.Text = myArty[0];
+                //  NewsTextBlock.Text = myNews.ToString();
+                NewsTextBlock1.Text = myArty[1];
+                ImageNewsTextBlock1.TextWrapping = TextWrapping.Wrap;
+                NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
+            }
+        }
+        */
 
         private void GetName_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -61,9 +172,172 @@ namespace NewsApp
         private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myTechNews = await News.GetTechNews();
-            TechNewsTextBlock.Text = myTechNews.ToString();
-            TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+            List<string> myArticles = new List<string>();
+            var obectString = "";
+            myArticles = myTechNews.returnArticleList();
+            Uri uri;
+            int i = 0;
+
+            //  foreach (var myArty in myArticles)
+            foreach (var myArty in myTechNews.articles)
+            {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
+
+                i++;
+                obectString = "\n" + myArty.ToString();
+                String myImage = myArty.urlToImage;
+
+                uri = new Uri(myArty.url);
+
+                //1st article
+                if (i == 1)
+                {
+                  
+                    String image = String.Format(myImage);
+                    TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    TechNewsTextBlock.Text += "\n\n" + obectString;
+                    TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //2nd article
+                if (i == 2)
+                {
+
+                    String image = String.Format(myImage);
+                    TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    TechNewsTextBlock2.Text += "\n\n" + obectString;
+                    TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //3rd article
+                if (i == 3)
+                {
+
+                    String image = String.Format(myImage);
+                    TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    TechNewsTextBlock3.Text += "\n\n" + obectString;
+                    TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //4th article
+                if (i == 4)
+                {
+
+                    String image = String.Format(myImage);
+                    TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    TechNewsTextBlock4.Text += "\n\n" + obectString;
+                    TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //1st article
+                if (i == 5)
+                {
+
+                    String image = String.Format(myImage);
+                    TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    TechNewsTextBlock5.Text += "\n\n" + obectString;
+                    TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+
+
+            }
         }
+        /*
+        //to get general news
+        private async void GetList_Button_Click(object sender, RoutedEventArgs e)
+        {
+            RootObject myNews = await News.GetNews();
+
+            List<string> myArticles = new List<string>();
+            var obectString = "";
+            myArticles = myNews.returnArticleList();
+            Uri uri;
+            int i = 0;
+
+            //  foreach (var myArty in myArticles)
+            foreach (var myArty in myNews.articles)
+            {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
+
+                i++;
+                obectString = "\n" + myArty.ToString();
+                String myImage = myArty.urlToImage;
+
+                uri = new Uri(myArty.url);
+
+                //1st article
+                if (i == 1)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock1.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //2nd article
+                if (i == 2)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock2.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //3rd article
+                if (i == 3)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock3.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //4th article
+                if (i == 4)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock4.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //1st article
+                if (i == 5)
+                {
+
+                    String image = String.Format(myImage);
+                    ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    NewsTextBlock5.Text += "\n\n" + obectString;
+                    //NewsTextBlock.
+                    NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+
+
+            }
+        }
+        */
 
         private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
         {

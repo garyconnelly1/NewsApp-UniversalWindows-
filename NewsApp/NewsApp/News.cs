@@ -200,9 +200,8 @@ namespace NewsApp
             public String ToString()
         {
             var currentNews = "";
-            currentNews = "SOURCE-"  + source.ToString() + "\n"  + "AUTHOR-" + author + "\n" + "TITLE-" + title + "\n" +
-                "DESCRIPTION-" + description +"\n" +"URL-"+ url + "\n"  + "IMAGE-" + urlToImage + "\n" +
-                "PUBLISHED AT-"+ publishedAt + "\n\n\n";
+            currentNews = "URL-" + url + "\n" + "IMAGE -" + urlToImage + "\n"  +  "SOURCE-"  + source.ToString() + "\n"  + "AUTHOR-" + author + "\n" + "TITLE-" + title + "\n" +
+                "DESCRIPTION-" + description +"\n" + "PUBLISHED AT-"+ publishedAt + "\n\n\n";
             return currentNews;
         }
 
@@ -223,25 +222,51 @@ namespace NewsApp
         [DataMember]
         public List<Article> articles { get; set; }
 
-        //public override string ToString()
-        //{
-        //    // Returns vars from articles class
-        //    //  return string.Format("{0}", string.Join("", articles.ToString()));
-        //    return articles.ToString();
-
-       //overiride ToString method on root object
-
-       //to return the full news object as a string
+       
         override
             public String ToString()
         {
             var obectString = "";
             foreach (var myArty in articles)
             {
+                //use object string array for links ie [0] = image [1] = article link [3] = article info
                 obectString = "\n" + obectString + myArty.ToString();
+                //obectString = "\n"  + myArty.ToString();
             }
             return obectString;
         }
+
+        //to return only author
+        public List<string> returnArticleList()
+        {
+            var obectString = "";
+            List<string> myList = new List<string>();
+            foreach (var myArty in articles)
+            {
+                // obectString = "\n" + obectString + myArty.ToString();
+                obectString = "\n" +  myArty.url + "\n" + myArty.urlToImage + "\n" + myArty.ToString();
+                myList.Add(obectString);
+            }
+            return myList;
+        }
+
+        //to return only author
+        public List<string[]> returnArticleListArray()
+        {
+            // var obectString = "";
+            string[] obectString = new string[3];
+            List<string[]> myList = new List<string[]>();
+            foreach (var myArty in articles)
+            {
+               
+                obectString[0] = "\n  YURT "  + myArty.url;
+                obectString[1] = "\n" + myArty.ToString();
+                myList.Add(obectString);
+            }
+            return myList;
+        }
+
+
 
         //to return only author
         public String returnAuthor()
