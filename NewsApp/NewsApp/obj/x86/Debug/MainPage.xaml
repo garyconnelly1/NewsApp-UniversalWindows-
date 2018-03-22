@@ -36,7 +36,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='25' x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center"                             />
+                    <Button x:ConnectionId='68' x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center"                             />
 
                     <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
 
@@ -46,20 +46,20 @@
 
                             
                            
-                            <Image x:ConnectionId='26' x:Name="ResultImage1" Height="200"/>
-                            <TextBlock x:ConnectionId='27' x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <Image x:ConnectionId='69' x:Name="ResultImage1" Height="200"/>
+                            <TextBlock x:ConnectionId='70' x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
-                            <Image x:ConnectionId='28' x:Name="ResultImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='29' x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <Image x:ConnectionId='71' x:Name="ResultImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='72' x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
-                            <Image x:ConnectionId='30' x:Name="ResultImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='31' x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <Image x:ConnectionId='73' x:Name="ResultImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='74' x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
-                            <Image x:ConnectionId='32' x:Name="ResultImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='33' x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <Image x:ConnectionId='75' x:Name="ResultImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='76' x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
-                            <Image x:ConnectionId='34' x:Name="ResultImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='35' x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <Image x:ConnectionId='77' x:Name="ResultImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='78' x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
                         </StackPanel>
                     </ScrollViewer>
@@ -82,24 +82,24 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='14' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
+                    <Button x:ConnectionId='57' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
                         <StackPanel>
                             
-                            <Image x:ConnectionId='15' x:Name="TechImage" Height="200"/>
-                            <TextBlock x:ConnectionId='16' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='58' x:Name="TechImage" Height="200"/>
+                            <TextBlock x:ConnectionId='59' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
 
-                            <Image x:ConnectionId='17' x:Name="TechImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='18' x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='60' x:Name="TechImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='61' x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
 
-                            <Image x:ConnectionId='19' x:Name="TechImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='20' x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='62' x:Name="TechImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='63' x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
 
-                            <Image x:ConnectionId='21' x:Name="TechImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='22' x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='64' x:Name="TechImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='65' x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
 
-                            <Image x:ConnectionId='23' x:Name="TechImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='24' x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='66' x:Name="TechImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='67' x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
@@ -119,9 +119,26 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='12' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
+                    <Button x:ConnectionId='46' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
-                        <TextBlock x:ConnectionId='13' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                             <Image x:ConnectionId='47' x:Name="SportImage" Height="200"/>
+                             <TextBlock x:ConnectionId='48' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='49' x:Name="SportImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='50' x:Name="SportNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='51' x:Name="SportImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='52' x:Name="SportNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='53' x:Name="SportImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='54' x:Name="SportNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='55' x:Name="SportImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='56' x:Name="SportNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
@@ -139,9 +156,24 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='10' x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center"                                    />
+                    <Button x:ConnectionId='35' x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center"                                    />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="MediumTurquoise">
-                        <TextBlock x:ConnectionId='11' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:ConnectionId='36' x:Name="ScienceImage" Height="200"/>
+                            <TextBlock x:ConnectionId='37' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='38' x:Name="ScienceImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='39' x:Name="ScienceNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='40' x:Name="ScienceImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='41' x:Name="ScienceNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='42' x:Name="ScienceImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='43' x:Name="ScienceNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='44' x:Name="ScienceImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='45' x:Name="ScienceNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
@@ -159,9 +191,24 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='8' x:Name="GetHealthNews_Button" Grid.Row="0" Content="Load Health News" VerticalAlignment="Center"                                   />
+                    <Button x:ConnectionId='24' x:Name="GetHealthNews_Button" Grid.Row="0" Content="Load Health News" VerticalAlignment="Center"                                   />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightBlue">
-                        <TextBlock x:ConnectionId='9' x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:ConnectionId='25' x:Name="HealthImage" Height="200"/>
+                            <TextBlock x:ConnectionId='26' x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='27' x:Name="HealthImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='28' x:Name="HealthNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='29' x:Name="HealthImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='30' x:Name="HealthNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='31' x:Name="HealthImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='32' x:Name="HealthNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='33' x:Name="HealthImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='34' x:Name="HealthNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
@@ -178,9 +225,24 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='6' x:Name="GetEntertainmentNews_Button" Grid.Row="0" Content="Load Entertainment News" VerticalAlignment="Center"                                          />
+                    <Button x:ConnectionId='13' x:Name="GetEntertainmentNews_Button" Grid.Row="0" Content="Load Entertainment News" VerticalAlignment="Center"                                          />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
-                        <TextBlock x:ConnectionId='7' x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:ConnectionId='14' x:Name="EntertainmentImage" Height="200"/>
+                            <TextBlock x:ConnectionId='15' x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='16' x:Name="EntertainmentImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='17' x:Name="EntertainmentNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='18' x:Name="EntertainmentImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='19' x:Name="EntertainmentNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='20' x:Name="EntertainmentImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='21' x:Name="EntertainmentNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='22' x:Name="EntertainmentImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='23' x:Name="EntertainmentNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
@@ -197,28 +259,29 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='4' x:Name="GetBusinesNews_Button" Grid.Row="0" Content="Load Business News" VerticalAlignment="Center"                                     />
+                    <Button x:ConnectionId='2' x:Name="GetBusinesNews_Button" Grid.Row="0" Content="Load Business News" VerticalAlignment="Center"                                     />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightGray">
-                        <TextBlock x:ConnectionId='5' x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:ConnectionId='3' x:Name="BusinessImage" Height="200"/>
+                            <TextBlock x:ConnectionId='4' x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='5' x:Name="BusinessImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='6' x:Name="BusinessNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='7' x:Name="BusinessImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='8' x:Name="BusinessNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='9' x:Name="BusinessImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='10' x:Name="BusinessNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:ConnectionId='11' x:Name="BusinessImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='12' x:Name="BusinessNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
-            <PivotItem Header="Image">
-                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Button x:ConnectionId='2' x:Name="GetImageNews_Button" Content="Load Images" VerticalAlignment="Center"                     />
-                    <!---https://www.independent.ie/world-news/and-finally/article36700269.ece/ALTERNATES/h342/ipanews_b4d74b57-e4ae-4a70-866a-f23f0dcac92d_1-->
-                    <ScrollViewer x:ConnectionId='3' x:Name="ImageView" Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                       
-                    </ScrollViewer>
-
-                </Grid>
-
-            </PivotItem>
+           
 
 
 

@@ -249,20 +249,21 @@ namespace NewsApp
 
             }
         }
-        /*
-        //to get general news
-        private async void GetList_Button_Click(object sender, RoutedEventArgs e)
+        
+
+        private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myNews = await News.GetNews();
+            RootObject mySportNews = await News.GetSportNews();
+
 
             List<string> myArticles = new List<string>();
             var obectString = "";
-            myArticles = myNews.returnArticleList();
+            myArticles = mySportNews.returnArticleList();
             Uri uri;
             int i = 0;
 
             //  foreach (var myArty in myArticles)
-            foreach (var myArty in myNews.articles)
+            foreach (var myArty in mySportNews.articles)
             {
                 //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
                 // myList.Add(obectString);
@@ -278,10 +279,9 @@ namespace NewsApp
                 {
 
                     String image = String.Format(myImage);
-                    ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    NewsTextBlock1.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
-                    NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
+                    SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    SportNewsTextBlock.Text += "\n\n" + obectString;
+                    SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
                 }
 
@@ -290,10 +290,9 @@ namespace NewsApp
                 {
 
                     String image = String.Format(myImage);
-                    ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    NewsTextBlock2.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
-                    NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+                    SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    SportNewsTextBlock2.Text += "\n\n" + obectString;
+                    SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
                 }
 
@@ -302,10 +301,9 @@ namespace NewsApp
                 {
 
                     String image = String.Format(myImage);
-                    ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    NewsTextBlock3.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
-                    NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+                    SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    SportNewsTextBlock3.Text += "\n\n" + obectString;
+                    SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
                 }
 
@@ -314,10 +312,9 @@ namespace NewsApp
                 {
 
                     String image = String.Format(myImage);
-                    ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    NewsTextBlock4.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
-                    NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+                    SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    SportNewsTextBlock4.Text += "\n\n" + obectString;
+                    SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
                 }
 
@@ -326,10 +323,9 @@ namespace NewsApp
                 {
 
                     String image = String.Format(myImage);
-                    ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    NewsTextBlock5.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
-                    NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+                    SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    SportNewsTextBlock5.Text += "\n\n" + obectString;
+                    SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
 
@@ -337,15 +333,11 @@ namespace NewsApp
 
             }
         }
-        */
 
-        private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
-        {
-            RootObject mySportNews = await News.GetSportNews();
-            SportNewsTextBlock.Text = mySportNews.ToString();
-            SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
-        }
+
+
+       
 
         private async void GetScienceNews_Button_Click(object sender, RoutedEventArgs e)
         {
