@@ -723,51 +723,121 @@ namespace NewsApp
 
             }
 
-
-
         }//end entertainment
 
         private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myBusinessNews = await News.GetBusinessNews();
-            BusinessNewsTextBlock.Text = myBusinessNews.ToString();
-            BusinessNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-        }
 
-        //to get general news
-        async void Image_Loaded(object sender, RoutedEventArgs e)
-        {
+            List<string> myArticles = new List<string>();
+            var obectString = "";
+            myArticles = myBusinessNews.returnArticleList();
+            Uri uri;
+            int i = 0;
 
-            RootObject myNews = await News.GetNews();
-
-            // NewsTextBlock.Text = myNews.ToString();
-            string[] text = myNews.returnUrlImage();
-            for (int i = 0; i < text.Length; i++)
+            //  foreach (var myArty in myArticles)
+            foreach (var myArty in myBusinessNews.articles)
             {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
 
-                Image img = sender as Image;
-                BitmapImage bitmapImage = new BitmapImage();
-               
-                img.Width = bitmapImage.DecodePixelWidth = 80; //natural px width of image source
-                                                               // don't need to set Height, system maintains aspect ratio, and calculates the other
-                                                               // dimension, so long as one dimension measurement is provided
-                bitmapImage.UriSource = new Uri(img.BaseUri, text[i]);
+                i++;
+                obectString = "\n" + myArty.ToString();
+                String myImage = myArty.urlToImage;
+
+                uri = new Uri(myArty.url);
+
+                //1st article
+                if (i == 1)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        BusinessImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
 
-                //  NewsTextBlock.Text += "\n " + text[i] + "\n ";
-                // NewsTextBlock.Text = text[0] + "\n";
-                // NewsTextBlock.TextWrapping = TextWrapping.Wrap;
+                    BusinessNewsTextBlock.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //2nd article
+                if (i == 2)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        BusinessImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    BusinessNewsTextBlock2.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //3rd article
+                if (i == 3)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        BusinessImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    BusinessNewsTextBlock3.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+
+
+
+                }
+
+                //4th article
+                if (i == 4)
+                {
+
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        BusinessImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    BusinessNewsTextBlock4.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+
+
+
+                }
+
+                //5th article
+                if (i == 5)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        BusinessImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    BusinessNewsTextBlock5.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+
+
+                }
+
             }
-            // NewsT
 
+        }// end business
 
-
-            //Image img = sender as Image;
-            //BitmapImage bitmapImage = new BitmapImage();
-            //img.Width = bitmapImage.DecodePixelWidth = 80; //natural px width of image source
-            //                                               // don't need to set Height, system maintains aspect ratio, and calculates the other
-            //                                               // dimension, so long as one dimension measurement is provided
-            //bitmapImage.UriSource = new Uri(img.BaseUri, "Images/myimage.png");
-        }
+        
     }
 }
