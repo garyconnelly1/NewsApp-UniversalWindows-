@@ -121,6 +121,15 @@ namespace NewsApp
         private global::Windows.UI.Xaml.Controls.TextBlock ScienceNewsTextBlock4;
         private global::Windows.UI.Xaml.Controls.Image ScienceImage5;
         private global::Windows.UI.Xaml.Controls.TextBlock ScienceNewsTextBlock5;
+        private global::Windows.UI.Xaml.Controls.Image HealthImage;
+        private global::Windows.UI.Xaml.Controls.Image HealthImage2;
+        private global::Windows.UI.Xaml.Controls.TextBlock HealthNewsTextBlock2;
+        private global::Windows.UI.Xaml.Controls.Image HealthImage3;
+        private global::Windows.UI.Xaml.Controls.TextBlock HealthNewsTextBlock3;
+        private global::Windows.UI.Xaml.Controls.Image HealthImage4;
+        private global::Windows.UI.Xaml.Controls.TextBlock HealthNewsTextBlock4;
+        private global::Windows.UI.Xaml.Controls.Image HealthImage5;
+        private global::Windows.UI.Xaml.Controls.TextBlock HealthNewsTextBlock5;
     }
 }
 

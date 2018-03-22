@@ -193,7 +193,22 @@
 
                     <Button x:Name="GetHealthNews_Button" Grid.Row="0" Content="Load Health News" VerticalAlignment="Center" Click="GetHealthNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightBlue">
-                        <TextBlock x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:Name="HealthImage" Height="200"/>
+                            <TextBlock x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="HealthImage2" Height="200"/>
+                            <TextBlock x:Name="HealthNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="HealthImage3" Height="200"/>
+                            <TextBlock x:Name="HealthNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="HealthImage4" Height="200"/>
+                            <TextBlock x:Name="HealthNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="HealthImage5" Height="200"/>
+                            <TextBlock x:Name="HealthNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
