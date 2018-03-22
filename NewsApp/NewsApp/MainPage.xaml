@@ -158,7 +158,22 @@
 
                     <Button x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center" Click="GetScienceNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="MediumTurquoise">
-                        <TextBlock x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:Name="ScienceImage" Height="200"/>
+                            <TextBlock x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="ScienceImage2" Height="200"/>
+                            <TextBlock x:Name="ScienceNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="ScienceImage3" Height="200"/>
+                            <TextBlock x:Name="ScienceNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="ScienceImage4" Height="200"/>
+                            <TextBlock x:Name="ScienceNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="ScienceImage5" Height="200"/>
+                            <TextBlock x:Name="ScienceNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
