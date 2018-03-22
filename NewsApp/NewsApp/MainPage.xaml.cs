@@ -615,9 +615,117 @@ namespace NewsApp
         private async void GetEntertainmentNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myEntertainmentNews = await News.GetEntertainmentNews();
-            EntertainmentNewsTextBlock.Text = myEntertainmentNews.ToString();
-            EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-        }
+
+            List<string> myArticles = new List<string>();
+            var obectString = "";
+            myArticles = myEntertainmentNews.returnArticleList();
+            Uri uri;
+            int i = 0;
+
+            //  foreach (var myArty in myArticles)
+            foreach (var myArty in myEntertainmentNews.articles)
+            {
+                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
+                // myList.Add(obectString);
+
+                i++;
+                obectString = "\n" + myArty.ToString();
+                String myImage = myArty.urlToImage;
+
+                uri = new Uri(myArty.url);
+
+                //1st article
+                if (i == 1)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        EntertainmentImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    EntertainmentNewsTextBlock.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+
+                }
+
+                //2nd article
+                if (i == 2)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        EntertainmentImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    EntertainmentNewsTextBlock2.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+
+
+                }
+
+                //3rd article
+                if (i == 3)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        EntertainmentImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    EntertainmentNewsTextBlock3.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+
+
+                }
+
+                //4th article
+                if (i == 4)
+                {
+
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        EntertainmentImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    EntertainmentNewsTextBlock4.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+
+
+                }
+
+                //5th article
+                if (i == 5)
+                {
+
+                    if (myImage != null)
+                    {
+                        String image = String.Format(myImage);
+                        EntertainmentImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+                    EntertainmentNewsTextBlock5.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+
+                }
+
+
+
+            }
+
+
+
+        }//end entertainment
 
         private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
         {
