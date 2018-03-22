@@ -17,10 +17,6 @@ namespace NewsApp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", " 14.0.0.0")]
         private global::Windows.UI.Xaml.Controls.Pivot NewsPivot;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", " 14.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.Button GetImageNews_Button;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", " 14.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.ScrollViewer ImageView;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", " 14.0.0.0")]
         private global::Windows.UI.Xaml.Controls.Button GetBusinesNews_Button;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", " 14.0.0.0")]
         private global::Windows.UI.Xaml.Controls.TextBlock BusinessNewsTextBlock;
@@ -139,6 +135,15 @@ namespace NewsApp
         private global::Windows.UI.Xaml.Controls.TextBlock EntertainmentNewsTextBlock4;
         private global::Windows.UI.Xaml.Controls.Image EntertainmentImage5;
         private global::Windows.UI.Xaml.Controls.TextBlock EntertainmentNewsTextBlock5;
+        private global::Windows.UI.Xaml.Controls.Image BusinessImage;
+        private global::Windows.UI.Xaml.Controls.Image BusinessImage2;
+        private global::Windows.UI.Xaml.Controls.TextBlock BusinessNewsTextBlock2;
+        private global::Windows.UI.Xaml.Controls.Image BusinessImage3;
+        private global::Windows.UI.Xaml.Controls.TextBlock BusinessNewsTextBlock3;
+        private global::Windows.UI.Xaml.Controls.Image BusinessImage4;
+        private global::Windows.UI.Xaml.Controls.TextBlock BusinessNewsTextBlock4;
+        private global::Windows.UI.Xaml.Controls.Image BusinessImage5;
+        private global::Windows.UI.Xaml.Controls.TextBlock BusinessNewsTextBlock5;
     }
 }
 

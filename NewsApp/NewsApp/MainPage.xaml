@@ -261,26 +261,27 @@
 
                     <Button x:Name="GetBusinesNews_Button" Grid.Row="0" Content="Load Business News" VerticalAlignment="Center" Click="GetBusinessNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightGray">
-                        <TextBlock x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                            <Image x:Name="BusinessImage" Height="200"/>
+                            <TextBlock x:Name="BusinessNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="BusinessImage2" Height="200"/>
+                            <TextBlock x:Name="BusinessNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="BusinessImage3" Height="200"/>
+                            <TextBlock x:Name="BusinessNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="BusinessImage4" Height="200"/>
+                            <TextBlock x:Name="BusinessNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="BusinessImage5" Height="200"/>
+                            <TextBlock x:Name="BusinessNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
 
-            <PivotItem Header="Image">
-                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Button x:Name="GetImageNews_Button" Content="Load Images" VerticalAlignment="Center" Click="Image_Loaded"/>
-                    <!---https://www.independent.ie/world-news/and-finally/article36700269.ece/ALTERNATES/h342/ipanews_b4d74b57-e4ae-4a70-866a-f23f0dcac92d_1-->
-                    <ScrollViewer x:Name="ImageView" Grid.Row="1" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-                       
-                    </ScrollViewer>
-
-                </Grid>
-
-            </PivotItem>
+           
 
 
 
