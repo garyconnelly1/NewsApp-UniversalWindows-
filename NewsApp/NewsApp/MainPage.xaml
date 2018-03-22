@@ -121,7 +121,24 @@
 
                     <Button x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center" Click="GetSportNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
-                        <TextBlock x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                        <StackPanel>
+                             <Image x:Name="SportImage" Height="200"/>
+                             <TextBlock x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="SportImage2" Height="200"/>
+                            <TextBlock x:Name="SportNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="SportImage3" Height="200"/>
+                            <TextBlock x:Name="SportNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="SportImage4" Height="200"/>
+                            <TextBlock x:Name="SportNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+                            <Image x:Name="SportImage5" Height="200"/>
+                            <TextBlock x:Name="SportNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+
+
+                        </StackPanel>
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
