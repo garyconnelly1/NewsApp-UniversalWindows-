@@ -498,6 +498,7 @@ namespace NewsApp
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myScienceNews.returnArticleList();
+            
             Uri uri;
             int i = 0;
 
@@ -510,7 +511,7 @@ namespace NewsApp
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
-
+                String url = myArty.url;
                 uri = new Uri(myArty.url);
 
                 //1st article
@@ -523,7 +524,12 @@ namespace NewsApp
                         ScienceImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                    
+                    Uri myuri = new Uri(url);
+                    scienceLink1.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    scienceLink1.Inlines.Add(run);
                     ScienceNewsTextBlock.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -539,7 +545,12 @@ namespace NewsApp
                         ScienceImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    scienceLink2.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    scienceLink2.Inlines.Add(run);
                     ScienceNewsTextBlock2.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
@@ -555,7 +566,12 @@ namespace NewsApp
                         ScienceImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    scienceLink3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    scienceLink3.Inlines.Add(run);
                     ScienceNewsTextBlock3.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
@@ -573,7 +589,12 @@ namespace NewsApp
                     }
 
 
-                   
+                    Uri myuri = new Uri(url);
+                    scienceLink4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    scienceLink4.Inlines.Add(run);
                     ScienceNewsTextBlock4.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
@@ -589,7 +610,12 @@ namespace NewsApp
                         ScienceImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    scienceLink5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    scienceLink5.Inlines.Add(run);
                     ScienceNewsTextBlock5.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 

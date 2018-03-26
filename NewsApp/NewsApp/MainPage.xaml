@@ -227,18 +227,38 @@
                         <StackPanel>
                             <Image x:Name="ScienceImage" Height="200"/>
                             <TextBlock x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ScienceLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="scienceLink1"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ScienceImage2" Height="200"/>
                             <TextBlock x:Name="ScienceNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ScienceLinkTextBlock2" xml:space="preserve"><Hyperlink x:Name="scienceLink2"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ScienceImage3" Height="200"/>
                             <TextBlock x:Name="ScienceNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ScienceLinkTextBlock3" xml:space="preserve"><Hyperlink x:Name="scienceLink3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ScienceImage4" Height="200"/>
                             <TextBlock x:Name="ScienceNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ScienceLinkTextBlock4" xml:space="preserve"><Hyperlink x:Name="scienceLink4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ScienceImage5" Height="200"/>
                             <TextBlock x:Name="ScienceNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="ScienceLinkTextBlock5" xml:space="preserve"><Hyperlink x:Name="scienceLink5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
