@@ -201,7 +201,7 @@ namespace NewsApp
         {
             var currentNews = "";
             currentNews = "URL-" + url + "\n" + "IMAGE -" + urlToImage + "\n"  +  "SOURCE-"  + source.ToString() + "\n"  + "AUTHOR-" + author + "\n" + "TITLE-" + title + "\n" +
-                "DESCRIPTION-" + description +"\n" + "PUBLISHED AT-"+ publishedAt + "\n\n\n";
+                "DESCRIPTION-" + description +"\n" + "PUBLISHED AT-"+ publishedAt;
             return currentNews;
         }
 

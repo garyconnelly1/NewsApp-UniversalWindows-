@@ -45,21 +45,42 @@
 
 
 
-                            <TextBlock x:Name="LinkTextBlock"><Hyperlink x:Name="link"></Hyperlink></TextBlock>
+                            
                             <Image x:Name="ResultImage1" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:Name="LinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="link1"></Hyperlink>
+                                    <!--For space between articles -->
+                            
+                            </TextBlock>
+                            
 
                             <Image x:Name="ResultImage2" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:Name="LinkTextBlock2" xml:space="preserve"><Hyperlink x:Name="link2"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ResultImage3" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:Name="LinkTextBlock3" xml:space="preserve"><Hyperlink x:Name="link3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ResultImage4" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:Name="LinkTextBlock4" xml:space="preserve"><Hyperlink x:Name="link4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="ResultImage5" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:Name="LinkTextBlock5" xml:space="preserve"><Hyperlink x:Name="link5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                         </StackPanel>
                     </ScrollViewer>

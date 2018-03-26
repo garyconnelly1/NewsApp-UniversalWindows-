@@ -90,11 +90,11 @@ namespace NewsApp
                         //ResultImage1.Source = "Assets/download.html";
                     }
                     Uri myuri = new Uri(url);
-                    link.NavigateUri = myuri;
+                    link1.NavigateUri = myuri;
                     //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
                     Run run = new Run();
                     run.Text = "View full article here";
-                    link.Inlines.Add(run);
+                    link1.Inlines.Add(run);
                     // LinkTextBlock.Text = "See full article here";
                     
                         NewsTextBlock1.Text += "\n\n" + obectString;
@@ -113,7 +113,14 @@ namespace NewsApp
                             ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                         }
 
-                    
+                        Uri myuri = new Uri(url);
+                        link2.NavigateUri = myuri;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run = new Run();
+                        run.Text = "View full article here";
+                        link2.Inlines.Add(run);
+
+
                         NewsTextBlock2.Text += "\n\n" + obectString;
                         //NewsTextBlock.
                         NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
@@ -130,7 +137,14 @@ namespace NewsApp
                         ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    link3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    link3.Inlines.Add(run);
+
+
                     NewsTextBlock3.Text += "\n\n" + obectString;
                     //NewsTextBlock.
                     NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
@@ -147,7 +161,14 @@ namespace NewsApp
                         ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    link4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    link4.Inlines.Add(run);
+
+
                     NewsTextBlock4.Text += "\n\n" + obectString;
                     //NewsTextBlock.
                     NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
@@ -162,6 +183,13 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+
+                    Uri myuri = new Uri(url);
+                    link5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    link5.Inlines.Add(run);
                     NewsTextBlock5.Text += "\n\n" + obectString;
                     //NewsTextBlock.
                     NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
