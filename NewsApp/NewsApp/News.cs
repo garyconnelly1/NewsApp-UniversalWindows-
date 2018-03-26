@@ -200,8 +200,8 @@ namespace NewsApp
             public String ToString()
         {
             var currentNews = "";
-            currentNews = "URL-" + url + "\n" + "IMAGE -" + urlToImage + "\n"  +  "SOURCE-"  + source.ToString() + "\n"  + "AUTHOR-" + author + "\n" + "TITLE-" + title + "\n" +
-                "DESCRIPTION-" + description +"\n" + "PUBLISHED AT-"+ publishedAt;
+            currentNews = "SOURCE- "  + source.ToString() + "\n"  + "AUTHOR- " + author + "\n" + "TITLE- " + title + "\n" +
+                "DESCRIPTION- " + description +"\n" + "PUBLISHED AT- "+ publishedAt;
             return currentNews;
         }
 
