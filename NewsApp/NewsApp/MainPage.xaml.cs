@@ -784,7 +784,7 @@ namespace NewsApp
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
-
+                String url = myArty.url;
                 uri = new Uri(myArty.url);
 
                 //1st article
@@ -797,7 +797,12 @@ namespace NewsApp
                         EntertainmentImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    entertainmentLink1.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    entertainmentLink1.Inlines.Add(run);
                     EntertainmentNewsTextBlock.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -813,7 +818,12 @@ namespace NewsApp
                         EntertainmentImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    entertainmentLink2.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    entertainmentLink2.Inlines.Add(run);
                     EntertainmentNewsTextBlock2.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
@@ -830,7 +840,12 @@ namespace NewsApp
                         EntertainmentImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    entertainmentLink3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    entertainmentLink3.Inlines.Add(run);
                     EntertainmentNewsTextBlock3.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
@@ -848,7 +863,12 @@ namespace NewsApp
                         EntertainmentImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    entertainmentLink4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    entertainmentLink4.Inlines.Add(run);
                     EntertainmentNewsTextBlock4.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
@@ -865,7 +885,12 @@ namespace NewsApp
                         EntertainmentImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    entertainmentLink5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    entertainmentLink5.Inlines.Add(run);
                     EntertainmentNewsTextBlock5.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 

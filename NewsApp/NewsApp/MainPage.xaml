@@ -336,18 +336,38 @@
                         <StackPanel>
                             <Image x:Name="EntertainmentImage" Height="200"/>
                             <TextBlock x:Name="EntertainmentNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="EntertainmentLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="entertainmentLink1"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="EntertainmentImage2" Height="200"/>
                             <TextBlock x:Name="EntertainmentNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="EntertainmentLinkTextBlock2" xml:space="preserve"><Hyperlink x:Name="entertainmentLink2"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="EntertainmentImage3" Height="200"/>
                             <TextBlock x:Name="EntertainmentNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="EntertainmentLinkTextBlock3" xml:space="preserve"><Hyperlink x:Name="entertainmentLink3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="EntertainmentImage4" Height="200"/>
                             <TextBlock x:Name="EntertainmentNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="EntertainmentLinkTextBlock4" xml:space="preserve"><Hyperlink x:Name="entertainmentLink4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="EntertainmentImage5" Height="200"/>
                             <TextBlock x:Name="EntertainmentNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="EntertainmentLinkTextBlock5" xml:space="preserve"><Hyperlink x:Name="entertainmentLink5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
