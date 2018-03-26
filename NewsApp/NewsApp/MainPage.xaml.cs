@@ -33,8 +33,6 @@ namespace NewsApp
         }
 
         
-       
-
         private async void outPutData()
         {
             RootObject myNews = await News.GetNews();
@@ -47,21 +45,14 @@ namespace NewsApp
         {
             RootObject myNews = await News.GetNews();
 
-            // NewsTextBlock.Text = myNews.ToString();
             NewsTextBlock1.Text = myNews.ToString();
             NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
-
-            // outPutData();
         }
 
         //to get general news
         private async void GetList_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myNews = await News.GetNews();
-
-            //Run run = new Run();
-            //run.Text = "View full article here";
-
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myNews.returnArticleList();
@@ -71,8 +62,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
+               
                
                     i++;
                     obectString = "\n" + myArty.ToString();
@@ -101,12 +91,8 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link1.Inlines.Add(run);
-                    // LinkTextBlock.Text = "See full article here";
-                    
-                        NewsTextBlock1.Text += "\n\n" + obectString;
-                        //NewsTextBlock.
-                        NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
-
+                     NewsTextBlock1.Text += "\n\n" + obectString;                     
+                     NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
                     }
 
                     //2nd article
@@ -125,12 +111,8 @@ namespace NewsApp
                         Run run = new Run();
                         run.Text = "View full article here";
                         link2.Inlines.Add(run);
-
-
                         NewsTextBlock2.Text += "\n\n" + obectString;
-                        //NewsTextBlock.
                         NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
                     }
 
                 //3rd article
@@ -149,12 +131,8 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link3.Inlines.Add(run);
-
-
-                    NewsTextBlock3.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
+                    NewsTextBlock3.Text += "\n\n" + obectString;                  
                     NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //4th article
@@ -176,7 +154,6 @@ namespace NewsApp
 
 
                     NewsTextBlock4.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
                     NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -196,26 +173,14 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link5.Inlines.Add(run);
-                    NewsTextBlock5.Text += "\n\n" + obectString;
-                    //NewsTextBlock.
+                    NewsTextBlock5.Text += "\n\n" + obectString;                   
                     NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
-
-
-
             }
         }
 
-        
-
-        //private void GetName_Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    //String name = "Gary";
-        //    //MessageBox.Show("Your name is: " + name);
-        //    // NameTextBlock.Text = name;
-        //}
-
+      
         //for tech news
         private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -230,9 +195,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myTechNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
-
+                
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
@@ -257,7 +220,6 @@ namespace NewsApp
                     techLink1.Inlines.Add(run);
                     TechNewsTextBlock.Text += "\n\n" + obectString;
                     TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //2nd article
@@ -278,7 +240,6 @@ namespace NewsApp
                     techLink2.Inlines.Add(run);
                     TechNewsTextBlock2.Text += "\n\n" + obectString;
                     TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //3rd article
@@ -299,7 +260,6 @@ namespace NewsApp
                     techLink3.Inlines.Add(run);
                     TechNewsTextBlock3.Text += "\n\n" + obectString;
                     TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //4th article
@@ -319,7 +279,6 @@ namespace NewsApp
                     techLink4.Inlines.Add(run);
                     TechNewsTextBlock4.Text += "\n\n" + obectString;
                     TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //5th article
@@ -340,11 +299,7 @@ namespace NewsApp
                     techLink5.Inlines.Add(run);
                     TechNewsTextBlock5.Text += "\n\n" + obectString;
                     TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
                 }
-
-
-
             }
         }
         
@@ -364,15 +319,14 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in mySportNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
+               
 
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
                 String url = myArty.url;
 
-               // uri = new Uri(myArty.url);
+               
 
                 //1st article
                 if (i == 1)
@@ -391,7 +345,6 @@ namespace NewsApp
                     sportLink1.Inlines.Add(run);
                     SportNewsTextBlock.Text += "\n\n" + obectString;
                     SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //2nd article
@@ -412,7 +365,6 @@ namespace NewsApp
                     sportLink2.Inlines.Add(run);
                     SportNewsTextBlock2.Text += "\n\n" + obectString;
                     SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //3rd article
@@ -433,7 +385,6 @@ namespace NewsApp
                     sportLink3.Inlines.Add(run);
                     SportNewsTextBlock3.Text += "\n\n" + obectString;
                     SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //4th article
@@ -455,13 +406,11 @@ namespace NewsApp
                     sportLink4.Inlines.Add(run);
                     SportNewsTextBlock4.Text += "\n\n" + obectString;
                     SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //5th article
                 if (i == 5)
                 {
-
 
                     if (myImage != null)
                     {
@@ -479,16 +428,9 @@ namespace NewsApp
                     SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
-
-
-
             }
         }
 
-
-
-
-       
         //for science news
         private async void GetScienceNews_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -505,9 +447,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myScienceNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
-
+               
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
@@ -532,7 +472,6 @@ namespace NewsApp
                     scienceLink1.Inlines.Add(run);
                     ScienceNewsTextBlock.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //2nd article
@@ -553,7 +492,6 @@ namespace NewsApp
                     scienceLink2.Inlines.Add(run);
                     ScienceNewsTextBlock2.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //3rd article
@@ -574,20 +512,17 @@ namespace NewsApp
                     scienceLink3.Inlines.Add(run);
                     ScienceNewsTextBlock3.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //4th article
                 if (i == 4)
                 {
 
-
                     if (myImage != null)
                     {
                         String image = String.Format(myImage);
                         ScienceImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
-
 
                     Uri myuri = new Uri(url);
                     scienceLink4.NavigateUri = myuri;
@@ -597,7 +532,6 @@ namespace NewsApp
                     scienceLink4.Inlines.Add(run);
                     ScienceNewsTextBlock4.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //5th article
@@ -618,13 +552,9 @@ namespace NewsApp
                     scienceLink5.Inlines.Add(run);
                     ScienceNewsTextBlock5.Text += "\n\n" + obectString;
                     ScienceNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
                 }
-
-
-
-            }
-        }
+            }//end foreach
+        }//end science
 
         private async void GetHealthNews_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -639,9 +569,6 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myHealthNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
-
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
@@ -667,7 +594,6 @@ namespace NewsApp
                     healthLink1.Inlines.Add(run);
                     HealthNewsTextBlock.Text += "\n\n" + obectString;
                     HealthNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //2nd article
@@ -688,8 +614,6 @@ namespace NewsApp
                     healthLink2.Inlines.Add(run);
                     HealthNewsTextBlock2.Text += "\n\n" + obectString;
                     HealthNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //3rd article
@@ -710,14 +634,11 @@ namespace NewsApp
                     healthLink3.Inlines.Add(run);
                     HealthNewsTextBlock3.Text += "\n\n" + obectString;
                     HealthNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //4th article
                 if (i == 4)
                 {
-
 
                     if (myImage != null)
                     {
@@ -733,8 +654,6 @@ namespace NewsApp
                     healthLink4.Inlines.Add(run);
                     HealthNewsTextBlock4.Text += "\n\n" + obectString;
                     HealthNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //5th article
@@ -755,14 +674,8 @@ namespace NewsApp
                     healthLink5.Inlines.Add(run);
                     HealthNewsTextBlock5.Text += "\n\n" + obectString;
                     HealthNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
-
                 }
-
-
-
             }
-
         }//end health
 
         private async void GetEntertainmentNews_Button_Click(object sender, RoutedEventArgs e)
@@ -778,9 +691,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myEntertainmentNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
-
+                
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
@@ -805,7 +716,6 @@ namespace NewsApp
                     entertainmentLink1.Inlines.Add(run);
                     EntertainmentNewsTextBlock.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
-
                 }
 
                 //2nd article
@@ -826,8 +736,6 @@ namespace NewsApp
                     entertainmentLink2.Inlines.Add(run);
                     EntertainmentNewsTextBlock2.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //3rd article
@@ -848,14 +756,11 @@ namespace NewsApp
                     entertainmentLink3.Inlines.Add(run);
                     EntertainmentNewsTextBlock3.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //4th article
                 if (i == 4)
                 {
-
 
                     if (myImage != null)
                     {
@@ -871,8 +776,6 @@ namespace NewsApp
                     entertainmentLink4.Inlines.Add(run);
                     EntertainmentNewsTextBlock4.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
-
                 }
 
                 //5th article
@@ -893,14 +796,8 @@ namespace NewsApp
                     entertainmentLink5.Inlines.Add(run);
                     EntertainmentNewsTextBlock5.Text += "\n\n" + obectString;
                     EntertainmentNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
-
                 }
-
-
-
-            }
-
+            }//end for each
         }//end entertainment
 
         private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
@@ -916,9 +813,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myBusinessNews.articles)
             {
-                //obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-                // myList.Add(obectString);
-
+               
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
@@ -986,15 +881,11 @@ namespace NewsApp
                     businessLink3.Inlines.Add(run);
                     BusinessNewsTextBlock3.Text += "\n\n" + obectString;
                     BusinessNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-
-
-
                 }
 
                 //4th article
                 if (i == 4)
                 {
-
 
                     if (myImage != null)
                     {
@@ -1010,9 +901,6 @@ namespace NewsApp
                     businessLink4.Inlines.Add(run);
                     BusinessNewsTextBlock4.Text += "\n\n" + obectString;
                     BusinessNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
-
-
                 }
 
                 //5th article
@@ -1033,7 +921,6 @@ namespace NewsApp
                     businessLink5.Inlines.Add(run);
                     BusinessNewsTextBlock5.Text += "\n\n" + obectString;
                     BusinessNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
                 }
             }
         }// end business   
