@@ -109,18 +109,43 @@
                             
                             <Image x:Name="TechImage" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="TechLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="techLink1"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
 
                             <Image x:Name="TechImage2" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="TechLinkTextBlock2" xml:space="preserve"><Hyperlink x:Name="techLink2"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
 
                             <Image x:Name="TechImage3" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="TechLinkTextBlock3" xml:space="preserve"><Hyperlink x:Name="techLink3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
 
                             <Image x:Name="TechImage4" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="TechLinkTextBlock4" xml:space="preserve"><Hyperlink x:Name="techLink4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
 
                             <Image x:Name="TechImage5" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="TechLinkTextBlock5" xml:space="preserve"><Hyperlink x:Name="techLink5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>

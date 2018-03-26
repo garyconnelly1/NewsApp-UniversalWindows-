@@ -25,6 +25,7 @@ namespace NewsApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
             this.InitializeComponent();
@@ -32,6 +33,7 @@ namespace NewsApp
         }
 
         
+       
 
         private async void outPutData()
         {
@@ -57,6 +59,9 @@ namespace NewsApp
         {
             RootObject myNews = await News.GetNews();
 
+            //Run run = new Run();
+            //run.Text = "View full article here";
+
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myNews.returnArticleList();
@@ -72,6 +77,7 @@ namespace NewsApp
                     i++;
                     obectString = "\n" + myArty.ToString();
                     String myImage = myArty.urlToImage;
+                //get url
                     String url = myArty.url;
 
                     uri = new Uri(myArty.url);
@@ -203,17 +209,18 @@ namespace NewsApp
 
         
 
-        private void GetName_Button_Click(object sender, RoutedEventArgs e)
-        {
-            //String name = "Gary";
-            //MessageBox.Show("Your name is: " + name);
-            // NameTextBlock.Text = name;
-        }
+        //private void GetName_Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //String name = "Gary";
+        //    //MessageBox.Show("Your name is: " + name);
+        //    // NameTextBlock.Text = name;
+        //}
 
         //for tech news
         private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myTechNews = await News.GetTechNews();
+            
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myTechNews.returnArticleList();
@@ -229,6 +236,7 @@ namespace NewsApp
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
+                String url = myArty.url;
 
                 uri = new Uri(myArty.url);
 
@@ -241,6 +249,12 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    Uri myuri = new Uri(url);
+                    techLink1.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    techLink1.Inlines.Add(run);
                     TechNewsTextBlock.Text += "\n\n" + obectString;
                     TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -256,7 +270,12 @@ namespace NewsApp
                         TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    techLink2.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    techLink2.Inlines.Add(run);
                     TechNewsTextBlock2.Text += "\n\n" + obectString;
                     TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
@@ -272,7 +291,12 @@ namespace NewsApp
                         TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-           
+                    Uri myuri = new Uri(url);
+                    techLink3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    techLink3.Inlines.Add(run);
                     TechNewsTextBlock3.Text += "\n\n" + obectString;
                     TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
@@ -286,7 +310,13 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
-                   
+
+                    Uri myuri = new Uri(url);
+                    techLink4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    techLink4.Inlines.Add(run);
                     TechNewsTextBlock4.Text += "\n\n" + obectString;
                     TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
@@ -302,7 +332,12 @@ namespace NewsApp
                         TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    techLink5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    techLink5.Inlines.Add(run);
                     TechNewsTextBlock5.Text += "\n\n" + obectString;
                     TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
