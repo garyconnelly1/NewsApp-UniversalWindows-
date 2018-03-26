@@ -10,6 +10,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Documents;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
@@ -83,7 +84,17 @@ namespace NewsApp
                             String image = String.Format(myImage);
                             ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                         }
-
+                    else
+                    {
+                        //ResultImage1.Source = "Assets/download.html";
+                    }
+                    Uri myuri = new Uri("https://www.facebook.com");
+                    link.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "Facebook";
+                    link.Inlines.Add(run);
+                    // LinkTextBlock.Text = "See full article here";
                     
                         NewsTextBlock1.Text += "\n\n" + obectString;
                         //NewsTextBlock.

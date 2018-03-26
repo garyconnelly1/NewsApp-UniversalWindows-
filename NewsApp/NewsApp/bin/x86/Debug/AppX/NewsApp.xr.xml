@@ -55,7 +55,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Inlines" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Hyperlink" />
     <RootType FullName="NewsApp.MainPage" />
   </Roots.RootTypes>
 </Roots>

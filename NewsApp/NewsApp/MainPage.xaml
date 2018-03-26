@@ -42,10 +42,10 @@
 
                       <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
                         <StackPanel>
-                            
 
-                            
-                           
+
+
+                            <TextBlock x:Name="LinkTextBlock"><Hyperlink x:Name="link"></Hyperlink></TextBlock>
                             <Image x:Name="ResultImage1" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
 
