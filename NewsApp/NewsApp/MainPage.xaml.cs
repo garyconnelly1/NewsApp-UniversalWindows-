@@ -370,8 +370,9 @@ namespace NewsApp
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
+                String url = myArty.url;
 
-                uri = new Uri(myArty.url);
+               // uri = new Uri(myArty.url);
 
                 //1st article
                 if (i == 1)
@@ -382,7 +383,12 @@ namespace NewsApp
                         SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                    
+                    Uri myuri = new Uri(url);
+                    sportLink1.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    sportLink1.Inlines.Add(run);
                     SportNewsTextBlock.Text += "\n\n" + obectString;
                     SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -398,7 +404,12 @@ namespace NewsApp
                         SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    sportLink2.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    sportLink2.Inlines.Add(run);
                     SportNewsTextBlock2.Text += "\n\n" + obectString;
                     SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
@@ -414,7 +425,12 @@ namespace NewsApp
                         SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    sportLink3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    sportLink3.Inlines.Add(run);
                     SportNewsTextBlock3.Text += "\n\n" + obectString;
                     SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
@@ -431,7 +447,12 @@ namespace NewsApp
                     }
 
 
-                   
+                    Uri myuri = new Uri(url);
+                    sportLink4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    sportLink4.Inlines.Add(run);
                     SportNewsTextBlock4.Text += "\n\n" + obectString;
                     SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
@@ -448,7 +469,12 @@ namespace NewsApp
                         SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-                   
+                    Uri myuri = new Uri(url);
+                    sportLink5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    sportLink5.Inlines.Add(run);
                     SportNewsTextBlock5.Text += "\n\n" + obectString;
                     SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
