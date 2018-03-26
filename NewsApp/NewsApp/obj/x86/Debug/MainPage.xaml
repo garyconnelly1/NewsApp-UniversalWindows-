@@ -36,7 +36,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='98' x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center"                             />
+                    <Button x:ConnectionId='108' x:Name="GetNews_Button" Grid.Row="0" Content="Load News" VerticalAlignment="Center"                             />
 
                     <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
 
@@ -46,38 +46,38 @@
 
 
                             
-                            <Image x:ConnectionId='99' x:Name="ResultImage1" Height="200"/>
-                            <TextBlock x:ConnectionId='100' x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
-                            <TextBlock x:ConnectionId='101' x:Name="LinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='118' x:Name="link1"></Hyperlink>
+                            <Image x:ConnectionId='109' x:Name="ResultImage1" Height="200"/>
+                            <TextBlock x:ConnectionId='110' x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='111' x:Name="LinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='128' x:Name="link1"></Hyperlink>
                                     <!--For space between articles -->
                             
                             </TextBlock>
                             
 
-                            <Image x:ConnectionId='102' x:Name="ResultImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='103' x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
-                            <TextBlock x:ConnectionId='104' x:Name="LinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='117' x:Name="link2"></Hyperlink>
+                            <Image x:ConnectionId='112' x:Name="ResultImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='113' x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='114' x:Name="LinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='127' x:Name="link2"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='105' x:Name="ResultImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='106' x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
-                            <TextBlock x:ConnectionId='107' x:Name="LinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='116' x:Name="link3"></Hyperlink>
+                            <Image x:ConnectionId='115' x:Name="ResultImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='116' x:Name="NewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='117' x:Name="LinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='126' x:Name="link3"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='108' x:Name="ResultImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='109' x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
-                            <TextBlock x:ConnectionId='110' x:Name="LinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='115' x:Name="link4"></Hyperlink>
+                            <Image x:ConnectionId='118' x:Name="ResultImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='119' x:Name="NewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='120' x:Name="LinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='125' x:Name="link4"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='111' x:Name="ResultImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='112' x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
-                            <TextBlock x:ConnectionId='113' x:Name="LinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='114' x:Name="link5"></Hyperlink>
+                            <Image x:ConnectionId='121' x:Name="ResultImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='122' x:Name="NewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='123' x:Name="LinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='124' x:Name="link5"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
@@ -103,45 +103,45 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='77' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
+                    <Button x:ConnectionId='87' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
                         <StackPanel>
                             
-                            <Image x:ConnectionId='78' x:Name="TechImage" Height="200"/>
-                            <TextBlock x:ConnectionId='79' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='80' x:Name="TechLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='97' x:Name="techLink1"></Hyperlink>
+                            <Image x:ConnectionId='88' x:Name="TechImage" Height="200"/>
+                            <TextBlock x:ConnectionId='89' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='90' x:Name="TechLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='107' x:Name="techLink1"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
 
-                            <Image x:ConnectionId='81' x:Name="TechImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='82' x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='83' x:Name="TechLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='96' x:Name="techLink2"></Hyperlink>
+                            <Image x:ConnectionId='91' x:Name="TechImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='92' x:Name="TechNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='93' x:Name="TechLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='106' x:Name="techLink2"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
 
-                            <Image x:ConnectionId='84' x:Name="TechImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='85' x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='86' x:Name="TechLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='95' x:Name="techLink3"></Hyperlink>
+                            <Image x:ConnectionId='94' x:Name="TechImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='95' x:Name="TechNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='96' x:Name="TechLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='105' x:Name="techLink3"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
 
-                            <Image x:ConnectionId='87' x:Name="TechImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='88' x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='89' x:Name="TechLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='94' x:Name="techLink4"></Hyperlink>
+                            <Image x:ConnectionId='97' x:Name="TechImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='98' x:Name="TechNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='99' x:Name="TechLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='104' x:Name="techLink4"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
 
-                            <Image x:ConnectionId='90' x:Name="TechImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='91' x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='92' x:Name="TechLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='93' x:Name="techLink5"></Hyperlink>
+                            <Image x:ConnectionId='100' x:Name="TechImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='101' x:Name="TechNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='102' x:Name="TechLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='103' x:Name="techLink5"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
@@ -165,40 +165,40 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='56' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
+                    <Button x:ConnectionId='66' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
                         <StackPanel>
-                             <Image x:ConnectionId='57' x:Name="SportImage" Height="200"/>
-                             <TextBlock x:ConnectionId='58' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='59' x:Name="SportLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='76' x:Name="sportLink1"></Hyperlink>
+                             <Image x:ConnectionId='67' x:Name="SportImage" Height="200"/>
+                             <TextBlock x:ConnectionId='68' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='69' x:Name="SportLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='86' x:Name="sportLink1"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='60' x:Name="SportImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='61' x:Name="SportNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='62' x:Name="SportLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='75' x:Name="sportLink2"></Hyperlink>
+                            <Image x:ConnectionId='70' x:Name="SportImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='71' x:Name="SportNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='72' x:Name="SportLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='85' x:Name="sportLink2"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='63' x:Name="SportImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='64' x:Name="SportNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='65' x:Name="SportLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='74' x:Name="sportLink3"></Hyperlink>
+                            <Image x:ConnectionId='73' x:Name="SportImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='74' x:Name="SportNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='75' x:Name="SportLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='84' x:Name="sportLink3"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='66' x:Name="SportImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='67' x:Name="SportNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='68' x:Name="SportLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='73' x:Name="sportLink4"></Hyperlink>
+                            <Image x:ConnectionId='76' x:Name="SportImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='77' x:Name="SportNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='78' x:Name="SportLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='83' x:Name="sportLink4"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='69' x:Name="SportImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='70' x:Name="SportNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='71' x:Name="SportLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='72' x:Name="sportLink5"></Hyperlink>
+                            <Image x:ConnectionId='79' x:Name="SportImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='80' x:Name="SportNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='81' x:Name="SportLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='82' x:Name="sportLink5"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
@@ -222,40 +222,40 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:ConnectionId='35' x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center"                                    />
+                    <Button x:ConnectionId='45' x:Name="GetScienceNews_Button" Grid.Row="0" Content="Load Science News" VerticalAlignment="Center"                                    />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="MediumTurquoise">
                         <StackPanel>
-                            <Image x:ConnectionId='36' x:Name="ScienceImage" Height="200"/>
-                            <TextBlock x:ConnectionId='37' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='38' x:Name="ScienceLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='55' x:Name="scienceLink1"></Hyperlink>
+                            <Image x:ConnectionId='46' x:Name="ScienceImage" Height="200"/>
+                            <TextBlock x:ConnectionId='47' x:Name="ScienceNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='48' x:Name="ScienceLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='65' x:Name="scienceLink1"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='39' x:Name="ScienceImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='40' x:Name="ScienceNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='41' x:Name="ScienceLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='54' x:Name="scienceLink2"></Hyperlink>
+                            <Image x:ConnectionId='49' x:Name="ScienceImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='50' x:Name="ScienceNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='51' x:Name="ScienceLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='64' x:Name="scienceLink2"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='42' x:Name="ScienceImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='43' x:Name="ScienceNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='44' x:Name="ScienceLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='53' x:Name="scienceLink3"></Hyperlink>
+                            <Image x:ConnectionId='52' x:Name="ScienceImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='53' x:Name="ScienceNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='54' x:Name="ScienceLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='63' x:Name="scienceLink3"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='45' x:Name="ScienceImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='46' x:Name="ScienceNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='47' x:Name="ScienceLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='52' x:Name="scienceLink4"></Hyperlink>
+                            <Image x:ConnectionId='55' x:Name="ScienceImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='56' x:Name="ScienceNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='57' x:Name="ScienceLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='62' x:Name="scienceLink4"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
 
-                            <Image x:ConnectionId='48' x:Name="ScienceImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='49' x:Name="ScienceNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='50' x:Name="ScienceLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='51' x:Name="scienceLink5"></Hyperlink>
+                            <Image x:ConnectionId='58' x:Name="ScienceImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='59' x:Name="ScienceNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='60' x:Name="ScienceLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='61' x:Name="scienceLink5"></Hyperlink>
                                     <!--For space between articles -->
 
                             </TextBlock>
@@ -282,18 +282,38 @@
                         <StackPanel>
                             <Image x:ConnectionId='25' x:Name="HealthImage" Height="200"/>
                             <TextBlock x:ConnectionId='26' x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='27' x:Name="HealthLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='44' x:Name="healthLink1"></Hyperlink>
+                                    <!--For space between articles -->
 
-                            <Image x:ConnectionId='27' x:Name="HealthImage2" Height="200"/>
-                            <TextBlock x:ConnectionId='28' x:Name="HealthNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            </TextBlock>
 
-                            <Image x:ConnectionId='29' x:Name="HealthImage3" Height="200"/>
-                            <TextBlock x:ConnectionId='30' x:Name="HealthNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='28' x:Name="HealthImage2" Height="200"/>
+                            <TextBlock x:ConnectionId='29' x:Name="HealthNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='30' x:Name="HealthLinkTextBlock2" xml:space="preserve"><Hyperlink x:ConnectionId='43' x:Name="healthLink2"></Hyperlink>
+                                    <!--For space between articles -->
 
-                            <Image x:ConnectionId='31' x:Name="HealthImage4" Height="200"/>
-                            <TextBlock x:ConnectionId='32' x:Name="HealthNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            </TextBlock>
 
-                            <Image x:ConnectionId='33' x:Name="HealthImage5" Height="200"/>
-                            <TextBlock x:ConnectionId='34' x:Name="HealthNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='31' x:Name="HealthImage3" Height="200"/>
+                            <TextBlock x:ConnectionId='32' x:Name="HealthNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='33' x:Name="HealthLinkTextBlock3" xml:space="preserve"><Hyperlink x:ConnectionId='42' x:Name="healthLink3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
+                            <Image x:ConnectionId='34' x:Name="HealthImage4" Height="200"/>
+                            <TextBlock x:ConnectionId='35' x:Name="HealthNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='36' x:Name="HealthLinkTextBlock4" xml:space="preserve"><Hyperlink x:ConnectionId='41' x:Name="healthLink4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
+
+                            <Image x:ConnectionId='37' x:Name="HealthImage5" Height="200"/>
+                            <TextBlock x:ConnectionId='38' x:Name="HealthNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:ConnectionId='39' x:Name="HealthLinkTextBlock5" xml:space="preserve"><Hyperlink x:ConnectionId='40' x:Name="healthLink5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>

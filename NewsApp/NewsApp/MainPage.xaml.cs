@@ -645,6 +645,7 @@ namespace NewsApp
                 i++;
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
+                String url = myArty.url;
 
                 uri = new Uri(myArty.url);
 
@@ -658,7 +659,12 @@ namespace NewsApp
                         HealthImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    healthLink1.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    healthLink1.Inlines.Add(run);
                     HealthNewsTextBlock.Text += "\n\n" + obectString;
                     HealthNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
@@ -674,7 +680,12 @@ namespace NewsApp
                         HealthImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    healthLink2.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    healthLink2.Inlines.Add(run);
                     HealthNewsTextBlock2.Text += "\n\n" + obectString;
                     HealthNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
@@ -691,7 +702,12 @@ namespace NewsApp
                         HealthImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    healthLink3.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    healthLink3.Inlines.Add(run);
                     HealthNewsTextBlock3.Text += "\n\n" + obectString;
                     HealthNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
 
@@ -709,7 +725,12 @@ namespace NewsApp
                         HealthImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    healthLink4.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    healthLink4.Inlines.Add(run);
                     HealthNewsTextBlock4.Text += "\n\n" + obectString;
                     HealthNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
@@ -726,7 +747,12 @@ namespace NewsApp
                         HealthImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
-
+                    Uri myuri = new Uri(url);
+                    healthLink5.NavigateUri = myuri;
+                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                    Run run = new Run();
+                    run.Text = "View full article here";
+                    healthLink5.Inlines.Add(run);
                     HealthNewsTextBlock5.Text += "\n\n" + obectString;
                     HealthNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 

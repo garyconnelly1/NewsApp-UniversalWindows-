@@ -282,18 +282,38 @@
                         <StackPanel>
                             <Image x:Name="HealthImage" Height="200"/>
                             <TextBlock x:Name="HealthNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="HealthLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="healthLink1"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="HealthImage2" Height="200"/>
                             <TextBlock x:Name="HealthNewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="HealthLinkTextBlock2" xml:space="preserve"><Hyperlink x:Name="healthLink2"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="HealthImage3" Height="200"/>
                             <TextBlock x:Name="HealthNewsTextBlock3" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="HealthLinkTextBlock3" xml:space="preserve"><Hyperlink x:Name="healthLink3"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="HealthImage4" Height="200"/>
                             <TextBlock x:Name="HealthNewsTextBlock4" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="HealthLinkTextBlock4" xml:space="preserve"><Hyperlink x:Name="healthLink4"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
 
                             <Image x:Name="HealthImage5" Height="200"/>
                             <TextBlock x:Name="HealthNewsTextBlock5" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <TextBlock x:Name="HealthLinkTextBlock5" xml:space="preserve"><Hyperlink x:Name="healthLink5"></Hyperlink>
+                                    <!--For space between articles -->
+
+                            </TextBlock>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
