@@ -71,7 +71,8 @@ namespace NewsApp
                
                     i++;
                     obectString = "\n" + myArty.ToString();
-                     String myImage = myArty.urlToImage;
+                    String myImage = myArty.urlToImage;
+                    String url = myArty.url;
 
                     uri = new Uri(myArty.url);
 
@@ -88,11 +89,11 @@ namespace NewsApp
                     {
                         //ResultImage1.Source = "Assets/download.html";
                     }
-                    Uri myuri = new Uri("https://www.facebook.com");
+                    Uri myuri = new Uri(url);
                     link.NavigateUri = myuri;
                     //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
                     Run run = new Run();
-                    run.Text = "Facebook";
+                    run.Text = "View full article here";
                     link.Inlines.Add(run);
                     // LinkTextBlock.Text = "See full article here";
                     
