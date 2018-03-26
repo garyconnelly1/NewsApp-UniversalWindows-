@@ -8,20 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="63*"/>
-            <RowDefinition Height="79*"/>
-            <RowDefinition Height="95*"/>
-            <RowDefinition Height="66*"/>
-            <RowDefinition Height="81*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="55*"/>
-            <ColumnDefinition Width="102*"/>
-            <ColumnDefinition Width="59*"/>
-        </Grid.ColumnDefinitions>-->
-
-
+        
         <Pivot x:Name="NewsPivot" Title="News App">
             <PivotItem Header="General news" Background="LightBlue">
 
@@ -40,19 +27,15 @@
 
                     <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
 
-                      <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
+                        <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
                         <StackPanel>
-
-
-
-                            
                             <Image x:Name="ResultImage1" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
                             <TextBlock x:Name="LinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="link1"></Hyperlink>
                                     <!--For space between articles -->
-                            
+
                             </TextBlock>
-                            
+
 
                             <Image x:Name="ResultImage2" Height="200"/>
                             <TextBlock x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
@@ -81,14 +64,9 @@
                                     <!--For space between articles -->
 
                             </TextBlock>
-
                         </StackPanel>
                     </ScrollViewer>
-
                 </Grid>
-                <!--.Row="1"-->
-               
-                <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
 
             <PivotItem Header="Technology" Background="LightCoral">
@@ -106,7 +84,7 @@
                     <Button x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center" Click="GetTechNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
                         <StackPanel>
-                            
+
                             <Image x:Name="TechImage" Height="200"/>
                             <TextBlock x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                             <TextBlock x:Name="TechLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="techLink1"></Hyperlink>
@@ -168,8 +146,8 @@
                     <Button x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center" Click="GetSportNews_Button_Click"/>
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
                         <StackPanel>
-                             <Image x:Name="SportImage" Height="200"/>
-                             <TextBlock x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:Name="SportImage" Height="200"/>
+                            <TextBlock x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                             <TextBlock x:Name="SportLinkTextBlock1" xml:space="preserve"><Hyperlink x:Name="sportLink1"></Hyperlink>
                                     <!--For space between articles -->
 
@@ -427,14 +405,6 @@
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
-
-           
-
-
-
         </Pivot>
-
-                
-
     </Grid>
 </Page>

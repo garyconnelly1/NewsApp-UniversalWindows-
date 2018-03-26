@@ -1034,14 +1034,8 @@ namespace NewsApp
                     BusinessNewsTextBlock5.Text += "\n\n" + obectString;
                     BusinessNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
-
-
                 }
-
             }
-
-        }// end business
-
-        
+        }// end business   
     }
-}
+}//end class
