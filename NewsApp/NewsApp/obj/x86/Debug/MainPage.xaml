@@ -8,20 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="63*"/>
-            <RowDefinition Height="79*"/>
-            <RowDefinition Height="95*"/>
-            <RowDefinition Height="66*"/>
-            <RowDefinition Height="81*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="55*"/>
-            <ColumnDefinition Width="102*"/>
-            <ColumnDefinition Width="59*"/>
-        </Grid.ColumnDefinitions>-->
-
-
+        
         <Pivot x:ConnectionId='1' x:Name="NewsPivot" Title="News App">
             <PivotItem Header="General news" Background="LightBlue">
 
@@ -40,19 +27,15 @@
 
                     <ScrollViewer Grid.Row="1" Grid.Column="0" VerticalScrollMode="Auto" Background="LightGray">
 
-                      <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
+                        <!--  <TextBlock x:Name="URLNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/> -->
                         <StackPanel>
-
-
-
-                            
                             <Image x:ConnectionId='129' x:Name="ResultImage1" Height="200"/>
                             <TextBlock x:ConnectionId='130' x:Name="NewsTextBlock1" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
                             <TextBlock x:ConnectionId='131' x:Name="LinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='148' x:Name="link1"></Hyperlink>
                                     <!--For space between articles -->
-                            
+
                             </TextBlock>
-                            
+
 
                             <Image x:ConnectionId='132' x:Name="ResultImage2" Height="200"/>
                             <TextBlock x:ConnectionId='133' x:Name="NewsTextBlock2" TextWrapping="Wrap"  HorizontalAlignment="Left"></TextBlock>
@@ -81,14 +64,9 @@
                                     <!--For space between articles -->
 
                             </TextBlock>
-
                         </StackPanel>
                     </ScrollViewer>
-
                 </Grid>
-                <!--.Row="1"-->
-               
-                <!--<TextBlock Text="Content of pivot item 1."/>-->
             </PivotItem>
 
             <PivotItem Header="Technology" Background="LightCoral">
@@ -106,7 +84,7 @@
                     <Button x:ConnectionId='107' x:Name="GetTechNews_Button" Grid.Row="0" Content="Load Tech News" VerticalAlignment="Center"                                 />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="DimGray">
                         <StackPanel>
-                            
+
                             <Image x:ConnectionId='108' x:Name="TechImage" Height="200"/>
                             <TextBlock x:ConnectionId='109' x:Name="TechNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                             <TextBlock x:ConnectionId='110' x:Name="TechLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='127' x:Name="techLink1"></Hyperlink>
@@ -168,8 +146,8 @@
                     <Button x:ConnectionId='86' x:Name="GetSportNews_Button" Grid.Row="0" Content="Load Sport News" VerticalAlignment="Center"                                  />
                     <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto" Background="LightYellow">
                         <StackPanel>
-                             <Image x:ConnectionId='87' x:Name="SportImage" Height="200"/>
-                             <TextBlock x:ConnectionId='88' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='87' x:Name="SportImage" Height="200"/>
+                            <TextBlock x:ConnectionId='88' x:Name="SportNewsTextBlock" TextWrapping="Wrap"  HorizontalAlignment="Left"/>
                             <TextBlock x:ConnectionId='89' x:Name="SportLinkTextBlock1" xml:space="preserve"><Hyperlink x:ConnectionId='106' x:Name="sportLink1"></Hyperlink>
                                     <!--For space between articles -->
 
@@ -427,15 +405,7 @@
                     </ScrollViewer>
                 </Grid>
             </PivotItem>
-
-           
-
-
-
         </Pivot>
-
-                
-
     </Grid>
 </Page>
 

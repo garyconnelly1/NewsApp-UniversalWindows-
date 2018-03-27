@@ -21,12 +21,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+            
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -41,12 +36,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=technology&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+           
             //deserialize the json objec
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -61,12 +51,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=sports&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+            
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -82,12 +67,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=science&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+           
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -103,12 +83,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=health&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+           
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -124,12 +99,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=entertainment&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+            
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -145,12 +115,7 @@ namespace NewsApp
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=business&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
-            //var serializer = new DataContractJsonSerializer(typeof(RootObject));
-
-            //var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            //var data = (RootObject)serializer.ReadObject(ms);
-
-
+           
             //deserialize the json object
             var data = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -204,12 +169,6 @@ namespace NewsApp
                 "DESCRIPTION- " + description +"\n" + "PUBLISHED AT- "+ publishedAt;
             return currentNews;
         }
-
-        // public override string ToString()
-        //{
-        //    return author;
-        //        //Debug.WriteLine(author);
-        //}
     }
 
     [DataContract]
@@ -231,7 +190,6 @@ namespace NewsApp
             {
                 //use object string array for links ie [0] = image [1] = article link [3] = article info
                 obectString = "\n" + obectString + myArty.ToString();
-                //obectString = "\n"  + myArty.ToString();
             }
             return obectString;
         }
@@ -243,7 +201,6 @@ namespace NewsApp
             List<string> myList = new List<string>();
             foreach (var myArty in articles)
             {
-                // obectString = "\n" + obectString + myArty.ToString();
                 obectString = "\n" +  myArty.url + "\n" + myArty.urlToImage + "\n" + myArty.ToString();
                 myList.Add(obectString);
             }
@@ -265,98 +222,5 @@ namespace NewsApp
             }
             return myList;
         }
-
-
-
-        //to return only author
-        public String returnAuthor()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "AUTHOR - " + myArty.author + "\n";
-            }
-            return obectString;
-        }
-
-        //to return only title
-        public String returnTitle()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "TITLE - " + myArty.title + "\n";
-            }
-            return obectString;
-        }
-
-        //to return only url
-        public String returnUrl()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "URL - " + myArty.url + "\n";
-            }
-            return obectString;
-        }
-
-        //to return only urlImage
-        public String[] returnUrlImage()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                 obectString = "\t" + obectString  + myArty.urlToImage + "\t";
-                //return myArty.urlToImage;
-                //obectString = "\t" + obectString +  myArty.urlToImage + "\t";
-                
-            }
-            //String[] tokens = obectString.Split("\t");
-            string[] tokens = obectString.Split('\t');
-            // return obectString;
-            return tokens;
-        }
-
-
-        //to return only publish date
-        public String returnPublishedAt()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "PUBLISHEDAT - " + myArty.publishedAt + "\n";
-            }
-            return obectString;
-        }
-
-
-        //to return only source
-        public String returnSource()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "PUBLISHEDAT - " + myArty.source + "\n";
-            }
-            return obectString;
-        }
-
-
-
-        //to return only description
-        public String returnDescription()
-        {
-            var obectString = "";
-            foreach (var myArty in articles)
-            {
-                obectString = "\n" + obectString + "SOURCE- " + myArty.description + "\n";
-            }
-            return obectString;
-        }
-        //}
     }
-
-
-
 }
