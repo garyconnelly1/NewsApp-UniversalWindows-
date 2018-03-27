@@ -83,7 +83,10 @@ namespace NewsApp
                         }
                     else
                     {
-                        //ResultImage1.Source = "Assets/download.html";
+                        //ms-appx:///Assets/Images/background1.jpg
+                        //"Assets/download.html"
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
                     Uri myuri = new Uri(url);
                     link1.NavigateUri = myuri;
@@ -461,6 +464,11 @@ namespace NewsApp
                     if (myImage != null)
                     {
                         String image = String.Format(myImage);
+                        ScienceImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         ScienceImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 

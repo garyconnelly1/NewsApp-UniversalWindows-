@@ -108,6 +108,7 @@
     <None Include="NewsApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\default.jpg" />
     <Content Include="Assets\download.html" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
