@@ -76,8 +76,8 @@ namespace NewsApp
                     if (i == 1)
                     {
 
-                        if (myImage != null)
-                        {
+                    if (myImage != null && myImage.StartsWith("http"))
+                    {
                             String image = String.Format(myImage);
                             ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                         }
@@ -102,13 +102,18 @@ namespace NewsApp
                     if (i == 2)
                     {
 
-                        if (myImage != null)
+                         if (myImage != null && myImage.StartsWith("http"))
                         {
                             String image = String.Format(myImage);
                             ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                         }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
 
-                        Uri myuri = new Uri(url);
+                    Uri myuri = new Uri(url);
                         link2.NavigateUri = myuri;
                         //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
                         Run run = new Run();
@@ -122,9 +127,14 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -142,9 +152,14 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -164,9 +179,14 @@ namespace NewsApp
                 //5th article
                 if (i == 5)
                 {
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -180,6 +200,7 @@ namespace NewsApp
                     NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
+                
             }
         }
 
@@ -210,11 +231,19 @@ namespace NewsApp
                 if (i == 1)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+
+
+
                     Uri myuri = new Uri(url);
                     techLink1.NavigateUri = myuri;
                     //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
@@ -229,9 +258,14 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -249,9 +283,14 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -268,9 +307,14 @@ namespace NewsApp
                 //4th article
                 if (i == 4)
                 {
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -288,9 +332,14 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -334,7 +383,7 @@ namespace NewsApp
                 //1st article
                 if (i == 1)
                 {
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -354,7 +403,7 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -374,7 +423,7 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -394,7 +443,7 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -415,7 +464,7 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -461,7 +510,7 @@ namespace NewsApp
                 if (i == 1)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         ScienceImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -486,7 +535,7 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         ScienceImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -506,7 +555,7 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         ScienceImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -526,7 +575,7 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         ScienceImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -546,7 +595,7 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         ScienceImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -588,7 +637,7 @@ namespace NewsApp
                 if (i == 1)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         HealthImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -608,7 +657,7 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         HealthImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -628,7 +677,7 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         HealthImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -648,7 +697,7 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         HealthImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -668,7 +717,7 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         HealthImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -710,7 +759,7 @@ namespace NewsApp
                 if (i == 1)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         EntertainmentImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -730,7 +779,7 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         EntertainmentImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -750,7 +799,7 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         EntertainmentImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -770,7 +819,7 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         EntertainmentImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -790,7 +839,7 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         EntertainmentImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -833,7 +882,7 @@ namespace NewsApp
                 if (i == 1)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         BusinessImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -854,7 +903,7 @@ namespace NewsApp
                 if (i == 2)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         BusinessImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -875,7 +924,7 @@ namespace NewsApp
                 if (i == 3)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         BusinessImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -895,7 +944,7 @@ namespace NewsApp
                 if (i == 4)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         BusinessImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
@@ -915,7 +964,7 @@ namespace NewsApp
                 if (i == 5)
                 {
 
-                    if (myImage != null)
+                    if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
                         BusinessImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
