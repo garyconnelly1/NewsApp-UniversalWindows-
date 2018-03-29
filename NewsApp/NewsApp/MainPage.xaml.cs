@@ -388,6 +388,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     sportLink1.NavigateUri = myuri;
@@ -406,6 +411,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -428,6 +438,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     sportLink3.NavigateUri = myuri;
@@ -446,6 +461,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -467,6 +487,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -540,6 +565,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         ScienceImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        ScienceImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     scienceLink2.NavigateUri = myuri;
@@ -580,6 +610,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         ScienceImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        ScienceImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     scienceLink4.NavigateUri = myuri;
@@ -598,6 +633,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        ScienceImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         ScienceImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -642,6 +682,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         HealthImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        HealthImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     healthLink1.NavigateUri = myuri;
@@ -660,6 +705,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        HealthImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         HealthImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -682,6 +732,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         HealthImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        HealthImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     healthLink3.NavigateUri = myuri;
@@ -702,6 +757,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         HealthImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        HealthImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     healthLink4.NavigateUri = myuri;
@@ -720,6 +780,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        HealthImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         HealthImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -764,6 +829,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         EntertainmentImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        EntertainmentImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     entertainmentLink1.NavigateUri = myuri;
@@ -782,6 +852,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        EntertainmentImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         EntertainmentImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -804,6 +879,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         EntertainmentImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        EntertainmentImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     entertainmentLink3.NavigateUri = myuri;
@@ -824,6 +904,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         EntertainmentImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        EntertainmentImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     entertainmentLink4.NavigateUri = myuri;
@@ -842,6 +927,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        EntertainmentImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         EntertainmentImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -887,6 +977,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         BusinessImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        BusinessImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     businessLink1.NavigateUri = myuri;
@@ -906,6 +1001,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        BusinessImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         BusinessImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
@@ -929,6 +1029,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         BusinessImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        BusinessImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     businessLink3.NavigateUri = myuri;
@@ -949,6 +1054,11 @@ namespace NewsApp
                         String image = String.Format(myImage);
                         BusinessImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
+                        BusinessImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
 
                     Uri myuri = new Uri(url);
                     businessLink4.NavigateUri = myuri;
@@ -967,6 +1077,11 @@ namespace NewsApp
                     if (myImage != null && myImage.StartsWith("http"))
                     {
                         String image = String.Format(myImage);
+                        BusinessImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                    }
+                    else
+                    {
+                        String image = String.Format("ms-appx:///Assets/default.jpg");
                         BusinessImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
 
