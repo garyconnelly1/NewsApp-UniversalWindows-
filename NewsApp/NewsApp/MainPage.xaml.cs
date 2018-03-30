@@ -1043,6 +1043,7 @@ namespace NewsApp
                         BusinessNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                         break;
                 }
+
             }
         }// end business   
 
