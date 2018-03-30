@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization;
@@ -12,13 +13,65 @@ namespace NewsApp
 {
     class News
     {
+        public string theCountry { get; set; }
+        static string country = "ie";
+        /*
+        public void setCountry(string myCountry)
+        {
+            this.theCountry = myCountry;
+        }
+        */
+
+        public string switchCountry(string country)
+        {
+            MainPage main = new MainPage();
+            theCountry = main.theCountrySelected;
+            Debug.WriteLine("get country + " + theCountry);
+
+            //switch theCountry
+            switch (theCountry)
+            {
+                case "France":
+                    country = "fr";
+                    break;
+
+                case "Ireland":
+                    country = "ie";
+                    break;
+
+                default:
+                    country = "pl";
+                    break;
+            }
+
+
+            return country;
+
+        }//end get country
 
         //get general news
-        public async static Task<RootObject> GetNews()
+        public async static Task<RootObject> GetNews(string countryQuery)
         {
+            if (countryQuery.Equals("France"))
+            {
+                countryQuery = "fr";
+            }
+            else
+            {
+                countryQuery = "us";
+            }
+
+            Debug.WriteLine("Get News + " + countryQuery);
             var http = new HttpClient();
+            News news = new News();
+           // var countryQuery = news.getCountry();
+          //  Debug.WriteLine(countryQuery);
+            var query1 = "https://newsapi.org/v2/top-headlines?language=en&country=";
+            var query2 = "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe";
+            var query = query1 + query2 + country;
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
-            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery +  "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+          
 
             var result = await response.Content.ReadAsStringAsync();
             

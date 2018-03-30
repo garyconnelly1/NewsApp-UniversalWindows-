@@ -25,7 +25,9 @@ namespace NewsApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        
+
+        public string theCountrySelected { get; set; }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -35,7 +37,7 @@ namespace NewsApp
         
         private async void outPutData()
         {
-            RootObject myNews = await News.GetNews();
+            RootObject myNews = await News.GetNews("buhh");
             Debug.WriteLine(myNews.ToString());
 
         }
@@ -43,7 +45,7 @@ namespace NewsApp
         //to get general news
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myNews = await News.GetNews();
+            RootObject myNews = await News.GetNews("buhh");
 
             NewsTextBlock1.Text = myNews.ToString();
             NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
@@ -52,7 +54,8 @@ namespace NewsApp
         //to get general news
         private async void GetList_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myNews = await News.GetNews();
+            Debug.WriteLine("get news heeyyyy + " + theCountrySelected);
+            RootObject myNews = await News.GetNews(theCountrySelected);
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myNews.returnArticleList();
@@ -1096,5 +1099,58 @@ namespace NewsApp
                 }
             }
         }// end business   
+
+        //combobox methods
+
+        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Console.WriteLine("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+            List<string> data = new List<string>();
+            data.Add("Ireland");
+            data.Add("Argentina");
+            data.Add("Austrailia");
+            data.Add("Brazil");
+            data.Add("Canada");
+            data.Add("Egypt");
+            data.Add("France");
+            data.Add("Germany");
+            data.Add("Poland");
+            data.Add("Russia");
+            data.Add("South Korea");
+            data.Add("Sweden");
+            data.Add("UK");
+            data.Add("US");
+            var combo = sender as ComboBox;
+            combo.ItemsSource = data;
+            combo.SelectedIndex = 0;
+
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Debug.WriteLine("selectionchanged");
+            var selectedComboItem = sender as ComboBox;
+            string selectedCountry = selectedComboItem.SelectedItem as string;
+            News news = new News();
+            countrySelected.Text = selectedCountry;
+            //news.setCountry(selectedCountry);// = selectedCountry;
+            news.theCountry = selectedCountry;
+            Debug.WriteLine(news.theCountry);
+            this.theCountrySelected = selectedCountry;
+           // MainPage main = new MainPage();
+           
+            Debug.WriteLine("you selected " + theCountrySelected);
+            // Console.WriteLine(selectedCountry);
+            //System.ServiceModel.Channels.Message.Show(selectedCountry);
+
+        }
+
+        private void France_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("selectionchanged");
+            countrySelected.Text = "country = France";
+            News news = new News();
+           // news.setCountry("France");
+        }
     }
 }//end class

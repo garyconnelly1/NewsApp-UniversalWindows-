@@ -132,15 +132,17 @@ namespace NewsApp.NewsApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "NewsApp.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "String";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::NewsApp.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::System.String);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,6 +192,7 @@ namespace NewsApp.NewsApp_XamlTypeInfo
             case 0:   //  NewsApp.MainPage
                 userType = new global::NewsApp.NewsApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
+                userType.AddMemberName("theCountrySelected");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -201,16 +204,40 @@ namespace NewsApp.NewsApp_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::NewsApp.NewsApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  String
+                xamlType = new global::NewsApp.NewsApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_theCountrySelected(object instance)
+        {
+            var that = (global::NewsApp.MainPage)instance;
+            return that.theCountrySelected;
+        }
+        private void set_0_MainPage_theCountrySelected(object instance, object Value)
+        {
+            var that = (global::NewsApp.MainPage)instance;
+            that.theCountrySelected = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::NewsApp.NewsApp_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::NewsApp.NewsApp_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "NewsApp.MainPage.theCountrySelected":
+                userType = (global::NewsApp.NewsApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NewsApp.MainPage");
+                xamlMember = new global::NewsApp.NewsApp_XamlTypeInfo.XamlMember(this, "theCountrySelected", "String");
+                xamlMember.Getter = get_0_MainPage_theCountrySelected;
+                xamlMember.Setter = set_0_MainPage_theCountrySelected;
+                break;
+            }
             return xamlMember;
         }
     }
