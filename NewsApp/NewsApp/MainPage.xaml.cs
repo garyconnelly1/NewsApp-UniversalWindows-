@@ -362,7 +362,7 @@ namespace NewsApp
         //for sport news
         private async void GetSportNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject mySportNews = await News.GetSportNews();
+            RootObject mySportNews = await News.GetSportNews(theCountrySelected);
 
 
             List<string> myArticles = new List<string>();
