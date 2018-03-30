@@ -952,7 +952,7 @@ namespace NewsApp
 
         private async void GetBusinessNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myBusinessNews = await News.GetBusinessNews();
+            RootObject myBusinessNews = await News.GetBusinessNews(theCountrySelected);
 
             List<string> myArticles = new List<string>();
             var obectString = "";
