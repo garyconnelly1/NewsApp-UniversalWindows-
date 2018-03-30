@@ -63,7 +63,8 @@ namespace NewsApp
             {
 
                 theCountrySelected = (string)localStorage.Values["newsCountry"];
-                
+                countrySelected.Text = "Fetching news from " + theCountrySelected;
+
             }
             catch
             {
@@ -1165,11 +1166,12 @@ namespace NewsApp
             var selectedComboItem = sender as ComboBox;
             string selectedCountry = selectedComboItem.SelectedItem as string;
             News news = new News();
-            countrySelected.Text = selectedCountry;
+            //countrySelected.Text = selectedCountry;
             
             theCountrySelected = selectedCountry;
-           // MainPage main = new MainPage();
-           
+            countrySelected.Text = "Fetching news from " + theCountrySelected;
+            // MainPage main = new MainPage();
+
             Debug.WriteLine("you selected " + theCountrySelected);
             // Console.WriteLine(selectedCountry);
             //System.ServiceModel.Channels.Message.Show(selectedCountry);
