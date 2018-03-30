@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -51,11 +52,43 @@ namespace NewsApp
             NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
         }
 
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // load local storage
+            ApplicationDataContainer localStorage = ApplicationData.Current.LocalSettings;
+
+            // if local storage value is available show the prevSearch textbox with date and last search
+            try
+            {
+
+                theCountrySelected = (string)localStorage.Values["newsCountry"];
+                
+            }
+            catch
+            {
+                // if no local storage value is available defaullt the country to Ireland
+                theCountrySelected = "Ireland";
+                
+            }
+            base.OnNavigatedTo(e);
+        }
+
+
+
+
+
+
         //to get general news
         private async void GetList_Button_Click(object sender, RoutedEventArgs e)
         {
             Debug.WriteLine("get news heeyyyy + " + theCountrySelected);
             RootObject myNews = await News.GetNews(theCountrySelected);
+
+            
+
+
+
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myNews.returnArticleList();
@@ -1122,7 +1155,7 @@ namespace NewsApp
             data.Add("US");
             var combo = sender as ComboBox;
             combo.ItemsSource = data;
-            combo.SelectedIndex = 0;
+            //combo.SelectedIndex = 0;
 
         }
 
@@ -1133,15 +1166,21 @@ namespace NewsApp
             string selectedCountry = selectedComboItem.SelectedItem as string;
             News news = new News();
             countrySelected.Text = selectedCountry;
-            //news.setCountry(selectedCountry);// = selectedCountry;
-           // news.theCountry = selectedCountry;
-           // Debug.WriteLine(news.theCountry);
-            this.theCountrySelected = selectedCountry;
+            
+            theCountrySelected = selectedCountry;
            // MainPage main = new MainPage();
            
             Debug.WriteLine("you selected " + theCountrySelected);
             // Console.WriteLine(selectedCountry);
             //System.ServiceModel.Channels.Message.Show(selectedCountry);
+
+
+            //local storage from lab 
+            ApplicationDataContainer localStorage = ApplicationData.Current.LocalSettings;
+
+            //save the value of the selected country to local storage
+            localStorage.Values["newsCountry"] = theCountrySelected;
+            Frame.Navigate(typeof(MainPage), theCountrySelected);
 
         }
 
