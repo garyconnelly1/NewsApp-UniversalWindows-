@@ -116,11 +116,7 @@ namespace NewsApp
             Debug.WriteLine("Get News + " + countryQuery);
             var http = new HttpClient();
            
-           // var countryQuery = news.getCountry();
-          //  Debug.WriteLine(countryQuery);
-           // var query1 = "https://newsapi.org/v2/top-headlines?language=en&country=";
-           // var query2 = "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe";
-           // var query = query1 + query2 + country;
+         
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery +  "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
           
@@ -140,7 +136,7 @@ namespace NewsApp
             var http = new HttpClient();
             var countryQuery = news.switchCountry(countryEntered);
             Debug.WriteLine("Tech news + " + countryQuery);
-           // Debug.WriteLine("Tech news + " + countryQuery + news.i);
+           
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery + "&category=technology&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 

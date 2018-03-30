@@ -73,10 +73,7 @@ namespace NewsApp
                 
             }
             base.OnNavigatedTo(e);
-        }
-
-
-
+        }//end on navigated to
 
 
 
@@ -85,11 +82,6 @@ namespace NewsApp
         {
             Debug.WriteLine("get news heeyyyy + " + theCountrySelected);
             RootObject myNews = await News.GetNews(theCountrySelected);
-
-            
-
-
-
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = myNews.returnArticleList();
@@ -99,9 +91,7 @@ namespace NewsApp
             //  foreach (var myArty in myArticles)
             foreach (var myArty in myNews.articles)
             {
-               
-               
-                    i++;
+                   
                     obectString = "\n" + myArty.ToString();
                     String myImage = myArty.urlToImage;
                 //get url
@@ -119,9 +109,7 @@ namespace NewsApp
                             ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                         }
                     else
-                    {
-                        //ms-appx:///Assets/Images/background1.jpg
-                        //"Assets/download.html"
+                    { 
                         String image = String.Format("ms-appx:///Assets/default.jpg");
                         ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
@@ -278,9 +266,6 @@ namespace NewsApp
                         String image = String.Format("ms-appx:///Assets/default.jpg");
                         TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
                     }
-
-
-
                     Uri myuri = new Uri(url);
                     techLink1.NavigateUri = myuri;
                     //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
@@ -402,7 +387,7 @@ namespace NewsApp
             List<string> myArticles = new List<string>();
             var obectString = "";
             myArticles = mySportNews.returnArticleList();
-            Uri uri;
+           // Uri uri;
             int i = 0;
 
             //  foreach (var myArty in myArticles)
@@ -414,9 +399,6 @@ namespace NewsApp
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
                 String url = myArty.url;
-
-               
-
                 //1st article
                 if (i == 1)
                 {
@@ -700,7 +682,6 @@ namespace NewsApp
             Uri uri;
             int i = 0;
 
-            //  foreach (var myArty in myArticles)
             foreach (var myArty in myHealthNews.articles)
             {
                 i++;
@@ -1138,7 +1119,6 @@ namespace NewsApp
 
         private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
-            //Console.WriteLine("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             List<string> data = new List<string>();
             data.Add("Ireland");
             data.Add("Argentina");
@@ -1156,7 +1136,6 @@ namespace NewsApp
             data.Add("US");
             var combo = sender as ComboBox;
             combo.ItemsSource = data;
-            //combo.SelectedIndex = 0;
 
         }
 
@@ -1166,15 +1145,14 @@ namespace NewsApp
             var selectedComboItem = sender as ComboBox;
             string selectedCountry = selectedComboItem.SelectedItem as string;
             News news = new News();
-            //countrySelected.Text = selectedCountry;
+           
             
             theCountrySelected = selectedCountry;
             countrySelected.Text = "Fetching news from " + theCountrySelected;
-            // MainPage main = new MainPage();
+            
 
             Debug.WriteLine("you selected " + theCountrySelected);
-            // Console.WriteLine(selectedCountry);
-            //System.ServiceModel.Channels.Message.Show(selectedCountry);
+            
 
 
             //local storage from lab 
