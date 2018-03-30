@@ -380,131 +380,123 @@ namespace NewsApp
                 obectString = "\n" + myArty.ToString();
                 String myImage = myArty.urlToImage;
                 String url = myArty.url;
-                //1st article
-                if (i == 1)
+
+                //switch i
+                switch (i)
                 {
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
+                    case 1:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            SportImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
 
-                    Uri myuri = new Uri(url);
-                    sportLink1.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    sportLink1.Inlines.Add(run);
-                    SportNewsTextBlock.Text = "\n\n" + obectString;
-                    SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+                        Uri myuri = new Uri(url);
+                        sportLink1.NavigateUri = myuri;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run = new Run();
+                        run.Text = "View full article here";
+                        sportLink1.Inlines.Add(run);
+                        SportNewsTextBlock.Text = "\n\n" + obectString;
+                        SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 2:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri2 = new Uri(url);
+                        sportLink2.NavigateUri = myuri2;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run2 = new Run();
+                        run2.Text = "View full article here";
+                        sportLink2.Inlines.Add(run2);
+                        SportNewsTextBlock2.Text = "\n\n" + obectString;
+                        SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 3:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri3 = new Uri(url);
+                        sportLink3.NavigateUri = myuri3;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run3 = new Run();
+                        run3.Text = "View full article here";
+                        sportLink3.Inlines.Add(run3);
+                        SportNewsTextBlock3.Text = "\n\n" + obectString;
+                        SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 4:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+
+                        Uri myuri4 = new Uri(url);
+                        sportLink4.NavigateUri = myuri4;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run4 = new Run();
+                        run4.Text = "View full article here";
+                        sportLink4.Inlines.Add(run4);
+                        SportNewsTextBlock4.Text = "\n\n" + obectString;
+                        SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 5:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri5 = new Uri(url);
+                        sportLink5.NavigateUri = myuri5;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run5 = new Run();
+                        run5.Text = "View full article here";
+                        sportLink5.Inlines.Add(run5);
+                        SportNewsTextBlock5.Text = "\n\n" + obectString;
+                        SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+
+                        break;
                 }
-
-                //2nd article
-                if (i == 2)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        SportImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    sportLink2.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    sportLink2.Inlines.Add(run);
-                    SportNewsTextBlock2.Text = "\n\n" + obectString;
-                    SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //3rd article
-                if (i == 3)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        SportImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    sportLink3.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    sportLink3.Inlines.Add(run);
-                    SportNewsTextBlock3.Text = "\n\n" + obectString;
-                    SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //4th article
-                if (i == 4)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        SportImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-
-                    Uri myuri = new Uri(url);
-                    sportLink4.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    sportLink4.Inlines.Add(run);
-                    SportNewsTextBlock4.Text = "\n\n" + obectString;
-                    SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //5th article
-                if (i == 5)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        SportImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    sportLink5.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    sportLink5.Inlines.Add(run);
-                    SportNewsTextBlock5.Text = "\n\n" + obectString;
-                    SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
-                }
+               
             }
         }
 
