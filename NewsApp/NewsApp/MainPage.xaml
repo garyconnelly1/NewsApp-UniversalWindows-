@@ -69,8 +69,6 @@
                     <StackPanel HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0">
                         <TextBlock xml:space="preserve" Text="Select a country"></TextBlock>
                         <ComboBox Loaded="ComboBox_Loaded" SelectionChanged="ComboBox_SelectionChanged"/>
-
-                        <Button x:Name="France_Button" Content="France"  Click="France_Button_Click"/>
                         <TextBlock x:Name="countrySelected"></TextBlock>
                     </StackPanel>
                     
