@@ -97,7 +97,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link1.Inlines.Add(run);
-                     NewsTextBlock1.Text += "\n\n" + obectString;                     
+                     NewsTextBlock1.Text = "\n\n" + obectString;                     
                      NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
                     }
 
@@ -122,7 +122,7 @@ namespace NewsApp
                         Run run = new Run();
                         run.Text = "View full article here";
                         link2.Inlines.Add(run);
-                        NewsTextBlock2.Text += "\n\n" + obectString;
+                        NewsTextBlock2.Text = "\n\n" + obectString;
                         NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                     }
 
@@ -147,7 +147,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link3.Inlines.Add(run);
-                    NewsTextBlock3.Text += "\n\n" + obectString;                  
+                    NewsTextBlock3.Text = "\n\n" + obectString;                  
                     NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -174,7 +174,7 @@ namespace NewsApp
                     link4.Inlines.Add(run);
 
 
-                    NewsTextBlock4.Text += "\n\n" + obectString;
+                    NewsTextBlock4.Text = "\n\n" + obectString;
                     NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -199,7 +199,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     link5.Inlines.Add(run);
-                    NewsTextBlock5.Text += "\n\n" + obectString;                   
+                    NewsTextBlock5.Text = "\n\n" + obectString;                   
                     NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -253,7 +253,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     techLink1.Inlines.Add(run);
-                    TechNewsTextBlock.Text += "\n\n" + obectString;
+                    TechNewsTextBlock.Text = "\n\n" + obectString;
                     TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -278,7 +278,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     techLink2.Inlines.Add(run);
-                    TechNewsTextBlock2.Text += "\n\n" + obectString;
+                    TechNewsTextBlock2.Text = "\n\n" + obectString;
                     TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -303,7 +303,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     techLink3.Inlines.Add(run);
-                    TechNewsTextBlock3.Text += "\n\n" + obectString;
+                    TechNewsTextBlock3.Text = "\n\n" + obectString;
                     TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -327,7 +327,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     techLink4.Inlines.Add(run);
-                    TechNewsTextBlock4.Text += "\n\n" + obectString;
+                    TechNewsTextBlock4.Text = "\n\n" + obectString;
                     TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -352,7 +352,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     techLink5.Inlines.Add(run);
-                    TechNewsTextBlock5.Text += "\n\n" + obectString;
+                    TechNewsTextBlock5.Text = "\n\n" + obectString;
                     TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                 }
             }
@@ -403,7 +403,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     sportLink1.Inlines.Add(run);
-                    SportNewsTextBlock.Text += "\n\n" + obectString;
+                    SportNewsTextBlock.Text = "\n\n" + obectString;
                     SportNewsTextBlock.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -428,7 +428,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     sportLink2.Inlines.Add(run);
-                    SportNewsTextBlock2.Text += "\n\n" + obectString;
+                    SportNewsTextBlock2.Text = "\n\n" + obectString;
                     SportNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -453,7 +453,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     sportLink3.Inlines.Add(run);
-                    SportNewsTextBlock3.Text += "\n\n" + obectString;
+                    SportNewsTextBlock3.Text = "\n\n" + obectString;
                     SportNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -479,7 +479,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     sportLink4.Inlines.Add(run);
-                    SportNewsTextBlock4.Text += "\n\n" + obectString;
+                    SportNewsTextBlock4.Text = "\n\n" + obectString;
                     SportNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -504,7 +504,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     sportLink5.Inlines.Add(run);
-                    SportNewsTextBlock5.Text += "\n\n" + obectString;
+                    SportNewsTextBlock5.Text = "\n\n" + obectString;
                     SportNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -555,7 +555,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     scienceLink1.Inlines.Add(run);
-                    ScienceNewsTextBlock.Text += "\n\n" + obectString;
+                    ScienceNewsTextBlock.Text = "\n\n" + obectString;
                     ScienceNewsTextBlock.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -580,7 +580,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     scienceLink2.Inlines.Add(run);
-                    ScienceNewsTextBlock2.Text += "\n\n" + obectString;
+                    ScienceNewsTextBlock2.Text = "\n\n" + obectString;
                     ScienceNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -600,7 +600,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     scienceLink3.Inlines.Add(run);
-                    ScienceNewsTextBlock3.Text += "\n\n" + obectString;
+                    ScienceNewsTextBlock3.Text = "\n\n" + obectString;
                     ScienceNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -625,7 +625,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     scienceLink4.Inlines.Add(run);
-                    ScienceNewsTextBlock4.Text += "\n\n" + obectString;
+                    ScienceNewsTextBlock4.Text = "\n\n" + obectString;
                     ScienceNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -650,7 +650,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     scienceLink5.Inlines.Add(run);
-                    ScienceNewsTextBlock5.Text += "\n\n" + obectString;
+                    ScienceNewsTextBlock5.Text = "\n\n" + obectString;
                     ScienceNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                 }
             }//end foreach
@@ -697,7 +697,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     healthLink1.Inlines.Add(run);
-                    HealthNewsTextBlock.Text += "\n\n" + obectString;
+                    HealthNewsTextBlock.Text = "\n\n" + obectString;
                     HealthNewsTextBlock.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -722,7 +722,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     healthLink2.Inlines.Add(run);
-                    HealthNewsTextBlock2.Text += "\n\n" + obectString;
+                    HealthNewsTextBlock2.Text = "\n\n" + obectString;
                     HealthNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -747,7 +747,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     healthLink3.Inlines.Add(run);
-                    HealthNewsTextBlock3.Text += "\n\n" + obectString;
+                    HealthNewsTextBlock3.Text = "\n\n" + obectString;
                     HealthNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -772,7 +772,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     healthLink4.Inlines.Add(run);
-                    HealthNewsTextBlock4.Text += "\n\n" + obectString;
+                    HealthNewsTextBlock4.Text = "\n\n" + obectString;
                     HealthNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -797,7 +797,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     healthLink5.Inlines.Add(run);
-                    HealthNewsTextBlock5.Text += "\n\n" + obectString;
+                    HealthNewsTextBlock5.Text = "\n\n" + obectString;
                     HealthNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                 }
             }
@@ -844,7 +844,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     entertainmentLink1.Inlines.Add(run);
-                    EntertainmentNewsTextBlock.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock.Text = "\n\n" + obectString;
                     EntertainmentNewsTextBlock.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -869,7 +869,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     entertainmentLink2.Inlines.Add(run);
-                    EntertainmentNewsTextBlock2.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock2.Text = "\n\n" + obectString;
                     EntertainmentNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -894,7 +894,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     entertainmentLink3.Inlines.Add(run);
-                    EntertainmentNewsTextBlock3.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock3.Text = "\n\n" + obectString;
                     EntertainmentNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -919,7 +919,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     entertainmentLink4.Inlines.Add(run);
-                    EntertainmentNewsTextBlock4.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock4.Text = "\n\n" + obectString;
                     EntertainmentNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -944,7 +944,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     entertainmentLink5.Inlines.Add(run);
-                    EntertainmentNewsTextBlock5.Text += "\n\n" + obectString;
+                    EntertainmentNewsTextBlock5.Text = "\n\n" + obectString;
                     EntertainmentNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                 }
             }//end for each
@@ -992,7 +992,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     businessLink1.Inlines.Add(run);
-                    BusinessNewsTextBlock.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock.Text = "\n\n" + obectString;
                     BusinessNewsTextBlock.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -1018,7 +1018,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     businessLink2.Inlines.Add(run);
-                    BusinessNewsTextBlock2.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock2.Text = "\n\n" + obectString;
                     BusinessNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
 
                 }
@@ -1044,7 +1044,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     businessLink3.Inlines.Add(run);
-                    BusinessNewsTextBlock3.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock3.Text = "\n\n" + obectString;
                     BusinessNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -1069,7 +1069,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     businessLink4.Inlines.Add(run);
-                    BusinessNewsTextBlock4.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock4.Text = "\n\n" + obectString;
                     BusinessNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
                 }
 
@@ -1094,7 +1094,7 @@ namespace NewsApp
                     Run run = new Run();
                     run.Text = "View full article here";
                     businessLink5.Inlines.Add(run);
-                    BusinessNewsTextBlock5.Text += "\n\n" + obectString;
+                    BusinessNewsTextBlock5.Text = "\n\n" + obectString;
                     BusinessNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
                 }
             }
