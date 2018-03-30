@@ -173,11 +173,14 @@ namespace NewsApp
 
 
         //get science news
-        public async static Task<RootObject> GetScienceNews()
+        public async static Task<RootObject> GetScienceNews(string countryEntered)
         {
+            News news = new News();
             var http = new HttpClient();
+            var countryQuery = news.switchCountry(countryEntered);
+            Debug.WriteLine("Science news + " + countryQuery);
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
-            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=science&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery + "&category=science&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
            

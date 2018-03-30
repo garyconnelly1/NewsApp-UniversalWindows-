@@ -514,7 +514,7 @@ namespace NewsApp
         //for science news
         private async void GetScienceNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myScienceNews = await News.GetScienceNews();
+            RootObject myScienceNews = await News.GetScienceNews(theCountrySelected);
 
 
             List<string> myArticles = new List<string>();
