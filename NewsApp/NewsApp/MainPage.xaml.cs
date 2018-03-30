@@ -658,7 +658,7 @@ namespace NewsApp
 
         private async void GetHealthNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myHealthNews = await News.GetHealthNews();
+            RootObject myHealthNews = await News.GetHealthNews(theCountrySelected);
 
             List<string> myArticles = new List<string>();
             var obectString = "";
