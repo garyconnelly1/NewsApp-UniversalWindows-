@@ -805,7 +805,7 @@ namespace NewsApp
 
         private async void GetEntertainmentNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myEntertainmentNews = await News.GetEntertainmentNews();
+            RootObject myEntertainmentNews = await News.GetEntertainmentNews(theCountrySelected);
 
             List<string> myArticles = new List<string>();
             var obectString = "";
