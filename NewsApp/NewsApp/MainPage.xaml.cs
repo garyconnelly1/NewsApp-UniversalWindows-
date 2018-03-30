@@ -211,7 +211,7 @@ namespace NewsApp
         //for tech news
         private async void GetTechNews_Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myTechNews = await News.GetTechNews();
+            RootObject myTechNews = await News.GetTechNews(theCountrySelected);
             
             List<string> myArticles = new List<string>();
             var obectString = "";
@@ -1134,8 +1134,8 @@ namespace NewsApp
             News news = new News();
             countrySelected.Text = selectedCountry;
             //news.setCountry(selectedCountry);// = selectedCountry;
-            news.theCountry = selectedCountry;
-            Debug.WriteLine(news.theCountry);
+           // news.theCountry = selectedCountry;
+           // Debug.WriteLine(news.theCountry);
             this.theCountrySelected = selectedCountry;
            // MainPage main = new MainPage();
            

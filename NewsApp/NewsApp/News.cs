@@ -14,6 +14,8 @@ namespace NewsApp
     class News
     {
         public string theCountry { get; set; }
+        public int i { get; set; }
+        // string theCountry = "x";
         static string country = "ie";
         /*
         public void setCountry(string myCountry)
@@ -24,32 +26,18 @@ namespace NewsApp
 
         public string switchCountry(string country)
         {
-            MainPage main = new MainPage();
-            theCountry = main.theCountrySelected;
-            Debug.WriteLine("get country + " + country);
+           // MainPage main = new MainPage();
+           // theCountry = main.theCountrySelected;
+            Debug.WriteLine("switch country + " + country);
 
-            /*
-             *  data.Add("Ireland");
-            data.Add("Argentina");
-            data.Add("Austrailia");
-            data.Add("Brazil");
-            data.Add("Canada");
-            data.Add("Egypt");
-            data.Add("France");
-            data.Add("Germany");
-            data.Add("Poland");
-            data.Add("Russia");
-            data.Add("South Korea");
-            data.Add("Sweden");
-            data.Add("UK");
-            data.Add("US");
-             * */
+            
 
             //switch theCountry
             switch (country)
             {
                 case "Argentina":
                     country = "ar";
+                    theCountry = "ar";
                     break;
 
                 case "Austrailia":
@@ -118,26 +106,21 @@ namespace NewsApp
         public async static Task<RootObject> GetNews(string countryEntered)
         {
             News news = new News();
+            Debug.WriteLine("The country + " + news.theCountry);
             string countryQuery = news.switchCountry(countryEntered);
-            /*
-            if (countryQuery.Equals("France"))
-            {
-                countryQuery = "fr";
-            }
-            else
-            {
-                countryQuery = "us";
-            }
-            */
+            news.theCountry = countryQuery;
+           
+            Debug.WriteLine("The After country + " + news.theCountry + news.i);
+           
 
             Debug.WriteLine("Get News + " + countryQuery);
             var http = new HttpClient();
            
            // var countryQuery = news.getCountry();
           //  Debug.WriteLine(countryQuery);
-            var query1 = "https://newsapi.org/v2/top-headlines?language=en&country=";
-            var query2 = "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe";
-            var query = query1 + query2 + country;
+           // var query1 = "https://newsapi.org/v2/top-headlines?language=en&country=";
+           // var query2 = "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe";
+           // var query = query1 + query2 + country;
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
             var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery +  "&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
           
@@ -151,11 +134,15 @@ namespace NewsApp
         }
 
         //get technology news
-        public async static Task<RootObject> GetTechNews()
+        public async static Task<RootObject> GetTechNews(string countryEntered)
         {
+            News news = new News();
             var http = new HttpClient();
+            var countryQuery = news.switchCountry(countryEntered);
+            Debug.WriteLine("Tech news + " + countryQuery);
+           // Debug.WriteLine("Tech news + " + countryQuery + news.i);
             //var response = await http.GetAsync("https://newsapi.org/v2/everything?q=Apple&from=2018-02-26&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
-            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=ie&category=technology&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
+            var response = await http.GetAsync("https://newsapi.org/v2/top-headlines?language=en&country=" + countryQuery + "&category=technology&sortBy=popularity&apiKey=603e450543534137a9c174909d4ac4fe");
 
             var result = await response.Content.ReadAsStringAsync();
            
