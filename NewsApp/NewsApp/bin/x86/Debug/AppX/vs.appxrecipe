@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-30T14:50:24.955</Modified>
+      <Modified>2018-03-30T14:57:08.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\NewsApp.exe">
       <PackagePath>entrypoint\NewsApp.exe</PackagePath>
-      <Modified>2018-03-30T14:50:23.166</Modified>
+      <Modified>2018-03-30T14:57:07.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -580,7 +580,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Debug\Core\NewsApp.exe">
       <PackagePath>NewsApp.exe</PackagePath>
-      <Modified>2018-03-30T14:50:24.936</Modified>
+      <Modified>2018-03-30T14:57:08.870</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

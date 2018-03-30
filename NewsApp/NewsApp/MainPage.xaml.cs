@@ -214,137 +214,7 @@ namespace NewsApp
                 }
 
                 
-                /*
-                //1st article
-                
-                    if (i == 1)
-                    {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                            String image = String.Format(myImage);
-                            ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                        }
-                    else
-                    { 
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        ResultImage1.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    Uri myuri = new Uri(url);
-                    link1.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    link1.Inlines.Add(run);
-                     NewsTextBlock1.Text = "\n\n" + obectString;                     
-                     NewsTextBlock1.TextWrapping = TextWrapping.Wrap;
-                    }
-                    
-                    //2nd article
-                    if (i == 2)
-                    {
-
-                         if (myImage != null && myImage.StartsWith("http"))
-                        {
-                            String image = String.Format(myImage);
-                            ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                        }
-                        else
-                        {
-                            String image = String.Format("ms-appx:///Assets/default.jpg");
-                            ResultImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                        }
-
-                    Uri myuri = new Uri(url);
-                        link2.NavigateUri = myuri;
-                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                        Run run = new Run();
-                        run.Text = "View full article here";
-                        link2.Inlines.Add(run);
-                        NewsTextBlock2.Text = "\n\n" + obectString;
-                        NewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-                    }
-                    
-                //3rd article
-                if (i == 3)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        ResultImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    link3.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    link3.Inlines.Add(run);
-                    NewsTextBlock3.Text = "\n\n" + obectString;                  
-                    NewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-                }
-                
-
-                //4th article
-                if (i == 4)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        ResultImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    link4.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    link4.Inlines.Add(run);
-
-
-                    NewsTextBlock4.Text = "\n\n" + obectString;
-                    NewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-
-                }
-                
-
-                //5th article
-                if (i == 5)
-                {
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        ResultImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    link5.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    link5.Inlines.Add(run);
-                    NewsTextBlock5.Text = "\n\n" + obectString;                   
-                    NewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-
-                }
-                */
+               
                 
             }
         }
@@ -372,128 +242,119 @@ namespace NewsApp
 
                 uri = new Uri(myArty.url);
 
-                //1st article
-                if (i == 1)
-                {
+                //switch i
+                switch (i) {
+                    case 1:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        Uri myuri = new Uri(url);
+                        techLink1.NavigateUri = myuri;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run = new Run();
+                        run.Text = "View full article here";
+                        techLink1.Inlines.Add(run);
+                        TechNewsTextBlock.Text = "\n\n" + obectString;
+                        TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+                        break;
 
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        TechImage.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    Uri myuri = new Uri(url);
-                    techLink1.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    techLink1.Inlines.Add(run);
-                    TechNewsTextBlock.Text = "\n\n" + obectString;
-                    TechNewsTextBlock.TextWrapping = TextWrapping.Wrap;
+                    case 2:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri2 = new Uri(url);
+                        techLink2.NavigateUri = myuri2;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run2 = new Run();
+                        run2.Text = "View full article here";
+                        techLink2.Inlines.Add(run2);
+                        TechNewsTextBlock2.Text = "\n\n" + obectString;
+                        TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 3:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri3 = new Uri(url);
+                        techLink3.NavigateUri = myuri3;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run3 = new Run();
+                        run3.Text = "View full article here";
+                        techLink3.Inlines.Add(run3);
+                        TechNewsTextBlock3.Text = "\n\n" + obectString;
+                        TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 4:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri4 = new Uri(url);
+                        techLink4.NavigateUri = myuri4;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run4 = new Run();
+                        run4.Text = "View full article here";
+                        techLink4.Inlines.Add(run4);
+                        TechNewsTextBlock4.Text = "\n\n" + obectString;
+                        TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
+                        break;
+
+                    case 5:
+                        if (myImage != null && myImage.StartsWith("http"))
+                        {
+                            String image = String.Format(myImage);
+                            TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+                        else
+                        {
+                            String image = String.Format("ms-appx:///Assets/default.jpg");
+                            TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
+                        }
+
+                        Uri myuri5 = new Uri(url);
+                        techLink5.NavigateUri = myuri5;
+                        //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
+                        Run run5 = new Run();
+                        run5.Text = "View full article here";
+                        techLink5.Inlines.Add(run5);
+                        TechNewsTextBlock5.Text = "\n\n" + obectString;
+                        TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
+                        break;
                 }
 
-                //2nd article
-                if (i == 2)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        TechImage2.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    techLink2.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    techLink2.Inlines.Add(run);
-                    TechNewsTextBlock2.Text = "\n\n" + obectString;
-                    TechNewsTextBlock2.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //3rd article
-                if (i == 3)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        TechImage3.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    techLink3.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    techLink3.Inlines.Add(run);
-                    TechNewsTextBlock3.Text = "\n\n" + obectString;
-                    TechNewsTextBlock3.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //4th article
-                if (i == 4)
-                {
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        TechImage4.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    techLink4.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    techLink4.Inlines.Add(run);
-                    TechNewsTextBlock4.Text = "\n\n" + obectString;
-                    TechNewsTextBlock4.TextWrapping = TextWrapping.Wrap;
-                }
-
-                //5th article
-                if (i == 5)
-                {
-
-                    if (myImage != null && myImage.StartsWith("http"))
-                    {
-                        String image = String.Format(myImage);
-                        TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-                    else
-                    {
-                        String image = String.Format("ms-appx:///Assets/default.jpg");
-                        TechImage5.Source = new BitmapImage(new Uri(image, UriKind.Absolute));
-                    }
-
-                    Uri myuri = new Uri(url);
-                    techLink5.NavigateUri = myuri;
-                    //https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Documents.Hyperlink
-                    Run run = new Run();
-                    run.Text = "View full article here";
-                    techLink5.Inlines.Add(run);
-                    TechNewsTextBlock5.Text = "\n\n" + obectString;
-                    TechNewsTextBlock5.TextWrapping = TextWrapping.Wrap;
-                }
+                
             }
         }
         
