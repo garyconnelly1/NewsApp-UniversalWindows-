@@ -26,11 +26,68 @@ namespace NewsApp
         {
             MainPage main = new MainPage();
             theCountry = main.theCountrySelected;
-            Debug.WriteLine("get country + " + theCountry);
+            Debug.WriteLine("get country + " + country);
+
+            /*
+             *  data.Add("Ireland");
+            data.Add("Argentina");
+            data.Add("Austrailia");
+            data.Add("Brazil");
+            data.Add("Canada");
+            data.Add("Egypt");
+            data.Add("France");
+            data.Add("Germany");
+            data.Add("Poland");
+            data.Add("Russia");
+            data.Add("South Korea");
+            data.Add("Sweden");
+            data.Add("UK");
+            data.Add("US");
+             * */
 
             //switch theCountry
-            switch (theCountry)
+            switch (country)
             {
+                case "Argentina":
+                    country = "ar";
+                    break;
+
+                case "Austrailia":
+                    country = "au";
+                    break;
+
+                case "Brazil":
+                    country = "br";
+                    break;
+
+                case "Canada":
+                    country = "ca";
+                    break;
+
+                case "Egypt":
+                    country = "eg";
+                    break;
+
+                case "Germany":
+                    country = "de";
+                    break;
+
+                case "Poland":
+                    country = "pl";
+                    break;
+
+                case "Russia":
+                    country = "ru";
+                    break;
+
+                case "South Korea":
+                    country = "kr";
+                    break;
+
+                case "Sweden":
+                    country = "se";
+                    break;
+
                 case "France":
                     country = "fr";
                     break;
@@ -39,8 +96,16 @@ namespace NewsApp
                     country = "ie";
                     break;
 
+                case "UK":
+                    country = "gb";
+                    break;
+
+                case "US":
+                    country = "us";
+                    break;
+
                 default:
-                    country = "pl";
+                    country = "ie";
                     break;
             }
 
@@ -50,8 +115,11 @@ namespace NewsApp
         }//end get country
 
         //get general news
-        public async static Task<RootObject> GetNews(string countryQuery)
+        public async static Task<RootObject> GetNews(string countryEntered)
         {
+            News news = new News();
+            string countryQuery = news.switchCountry(countryEntered);
+            /*
             if (countryQuery.Equals("France"))
             {
                 countryQuery = "fr";
@@ -60,10 +128,11 @@ namespace NewsApp
             {
                 countryQuery = "us";
             }
+            */
 
             Debug.WriteLine("Get News + " + countryQuery);
             var http = new HttpClient();
-            News news = new News();
+           
            // var countryQuery = news.getCountry();
           //  Debug.WriteLine(countryQuery);
             var query1 = "https://newsapi.org/v2/top-headlines?language=en&country=";
