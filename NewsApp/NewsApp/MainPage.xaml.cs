@@ -33,7 +33,7 @@ namespace NewsApp
         {
             this.InitializeComponent();
 
-            //try to add sound
+            //adding sound
             ElementSoundPlayer.State = ElementSoundPlayerState.On;
             //outPutData();
         }
