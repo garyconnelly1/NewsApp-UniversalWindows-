@@ -31,13 +31,16 @@ git clone https://github.com/garyconnelly1/NewsApp-UniversalWindows-
 
 ## Testing:
 - You can test use the project by using the drop down box menu to select a country with which you would like to see news from - 
+
 ![](NewsApp/NewsApp/ScreenShots/Capture2.PNG)
 
 - You simply click on the load news button at the top of whatever pivot you happen to be on and wait for the news to appear.
 - Once it has appeared you can click on a link under the article that redirects you to another page that shows you the full article from the actual source.
+
 ![](NewsApp/NewsApp/ScreenShots/Capture3.PNG)
 
 - You can see articles from any of the many pivots by clicking on the name of the category on the bar running along the top of the app.
+
 ![](NewsApp/NewsApp/ScreenShots/Capture4.PNG)
 
 
