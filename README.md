@@ -61,3 +61,6 @@ While there are no build time or runtime erros in this application, there are st
 
 ## Final thoughts:
 I thoroughly enjoyed making this app as I feel as though I learned a lot. There were times where I felt as though maybe using a news API was too complicated but I am glad I powered through it to get to the finished product. Not only did I gain a huge understanding about ther universal windows platform, but I even feel as though this project will benifit me greatly going forward in every module. I discovered, in this project more than any others, how to break a problem down into the smallest possible components to be able to solve a problem or task. I am delighted that I got the opportunity to work with an API and learn how the calls work because working with data will be a huge part of my career going forward.  
+
+## Author:
+Gary Connelly
