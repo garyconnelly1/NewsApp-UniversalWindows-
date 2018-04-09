@@ -26,3 +26,5 @@ git clone https://github.com/garyconnelly1/NewsApp-UniversalWindows-
 ### Running the application:
 - Open up the application in visual studio 2017. 
 - You then need to click the green arrow at the top of the screen - 
+
+![](ScreenShots/Capture1.PNG)
