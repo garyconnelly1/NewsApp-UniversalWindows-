@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T19:13:37.160</Modified>
+      <Modified>2018-04-09T20:06:20.871</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -281,20 +281,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\ilc\NewsApp.dll">
       <PackagePath>NewsApp.dll</PackagePath>
-      <Modified>2018-04-09T19:13:33.691</Modified>
+      <Modified>2018-04-09T20:06:17.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\ilc\NewsApp.exe">
       <PackagePath>NewsApp.exe</PackagePath>
-      <Modified>2018-04-09T19:13:36.957</Modified>
+      <Modified>2018-04-09T20:06:20.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\ilc\NewsApp.pdb">
       <PackagePath>NewsApp.pdb</PackagePath>
-      <Modified>2018-04-09T19:13:36.879</Modified>
+      <Modified>2018-04-09T20:06:20.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-05T14:29:35.092</Modified>
+      <Modified>2018-04-09T20:01:32.944</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
