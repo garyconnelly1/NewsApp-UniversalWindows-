@@ -1,0 +1,2 @@
+MainPackage=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\Upload\NewsApp_1.1.0.0_x86.appx
+SymbolPackage=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\x86\Release\Upload\NewsApp_1.1.0.0\NewsApp_1.1.0.0_x86.appxsym

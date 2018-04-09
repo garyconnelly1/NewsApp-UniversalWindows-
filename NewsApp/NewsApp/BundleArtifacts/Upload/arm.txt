@@ -1,0 +1,6 @@
+MainPackage=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\Upload\NewsApp_1.1.0.0_ARM.appx
+SymbolPackage=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\Upload\NewsApp_1.1.0.0\NewsApp_1.1.0.0_ARM.appxsym
+ResourcePack=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\NewsApp_1.1.0.0_scale-100.appx
+ResourcePack=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\NewsApp_1.1.0.0_scale-125.appx
+ResourcePack=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\NewsApp_1.1.0.0_scale-150.appx
+ResourcePack=C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\bin\ARM\Release\NewsApp_1.1.0.0_scale-400.appx

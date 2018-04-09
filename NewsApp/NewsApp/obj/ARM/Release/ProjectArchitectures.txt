@@ -1,0 +1,1 @@
+C:\Users\mary\source\repos\NewsApp-UniversalWindows-\NewsApp\NewsApp\NewsApp.csproj;arm
