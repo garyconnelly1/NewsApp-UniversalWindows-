@@ -14,3 +14,15 @@ In order to be able to successfully download and run this project you will need:
 ```
 https://www.visualstudio.com/downloads/
 ```
+
+### Installation:
+
+- To install this app onto your machine you must first navigate to where you want the program to be saved.
+- Into your command prompt type -
+```
+git clone https://github.com/garyconnelly1/NewsApp-UniversalWindows-
+```
+
+### Running the application:
+- Open up the application in visual studio 2017. 
+- You then need to click the green arrow at the top of the screen - 
