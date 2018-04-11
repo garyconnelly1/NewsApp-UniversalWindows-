@@ -47,6 +47,9 @@ git clone https://github.com/garyconnelly1/NewsApp-UniversalWindows-
 
 ![](NewsApp/NewsApp/ScreenShots/Capture4.PNG)
 
+## Why News?
+I decided to do a news app because it is a pretty hot topic at the minute. It gets a lot of press all over the media because various news outlets are being accused of being "fake news" by multiple people and organisations. To be honest, it isn't at all suprising that the news itself has been making the news a lot lately, all one has to do is look at the same news story on Fox News, and then CNN. The viewer would see two completely different accounts of the same story. It doesnt take a genius to see that there are inherent biases in the different news organisations, depending on it's views and political orientation. I wanted to create a news app the shows news from a wide range of news sources, providing a wide diversity of coverage of all kinds of news stories. No matter what your views or political orientation, E-news has the news for you. 
+
 
 ## How it was made.
 ### Resources:
